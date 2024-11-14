@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 const NavBar = () => (
   <ul className="nav-items">
