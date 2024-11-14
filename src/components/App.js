@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import '../App.css';
 import Contact from './Contact';
+// eslint-disable-next-line
 import Projects from './Projects';
 
 
@@ -17,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
