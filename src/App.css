@@ -17,7 +17,7 @@
 
 body {
   font-family: var(--font-family);
-  background-image: url("./images/bluegradient.jpg");
+  background-image: url('./images/bluelines.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -44,96 +44,6 @@ button:active {
   background-color: blue;
 }
 
-.section {
-  padding: 20px;
-  margin: 20px 0;
-  color: var(--text-color);
-  border-radius: 5px;
-}
-
-.section {
-  margin: 2rem;
-}
-
-div>.container {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  width: 60px;
-  margin: 2rem;
-}
-
-#anchor {
-  color: aqua;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.find { 
-  color: white;
-  font-size: 14px;
-}
-
-body {
-  background-image: url('./images/bluelines.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#contact_main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-.background {
-  padding: 1rem;
-  margin: 2rem;
-  border-radius: 5px;
-}
-
-.find {
-  margin-top: 1rem;
-}
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  padding: 1rem;
-}
-
-.about-me-email {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.about-me-email:hover {
-  color: var(--secondary-color);
-}
-
-.about-me-email:active {
-  color: var(--tertiary-color);
-}
-
-.about-me-email:visited {
-  color: var(--primary-color);
-}
-
-.about-me-email:focus {
-  margin-top: 0;
-  margin-bottom: 2.5rem;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -144,6 +54,15 @@ h2 {
   overflow: auto;
   flex: 1;
 }
+
+div>.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 footer {
   position: fixed;
@@ -192,12 +111,21 @@ header ul {
   justify-content: center;
 }
 
+img {
+  width: 60px;
+  margin: 2rem;
+}
+
 .logo {
   max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-container {
+  width: 100%;
 }
 
 .logos {
@@ -258,6 +186,32 @@ header ul {
   width: 90%;
 }
 
+.section {
+  padding: 20px;
+  margin: 20px 0;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.section {
+  margin: 2rem;
+}
+
+#anchor {
+  color: aqua;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#contact_main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 #experience {
   display: flex;
   flex-wrap: wrap;
@@ -283,97 +237,137 @@ header ul {
   padding-top: 2rem;
 }
 
-.logo-container {
-  width: 100%;
+.about-me-email {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-me-email:hover {
+  color: var(--secondary-color);
+}
+
+.about-me-email:active {
+  color: var(--tertiary-color);
+}
+
+.about-me-email:visited {
+  color: var(--primary-color);
+}
+
+.about-me-email:focus {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.background {
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+.find {
+  color: white;
+  font-size: 14px;
+}
+
+.find {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1rem;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .main h1 {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
 
   .main p {
-      font-size: 1.1em;
+    font-size: 1.1em;
   }
 
   #name {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
 
   #profile {
-      width: 130px;
+    width: 130px;
   }
 
   .logos {
-      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-      gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   footer {
-      padding: auto;
+    padding: auto;
   }
 
   .main h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .main p {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   #name {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   #profile {
-      width: 100px;
+    width: 100px;
   }
 
   .logos {
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-      gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   footer {
-      padding: 10px;
+    padding: 10px;
   }
 
   header {
-      flex-direction: column;
-      padding: 10px 0;
+    flex-direction: column;
+    padding: 10px 0;
   }
 
   header li {
-      padding: 5px 0;
+    padding: 5px 0;
   }
 
   header ul {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .main {
-      padding: 20px;
+    padding: 20px;
   }
 
   .main h1 {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 
   .main p {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 
   #profile {
-      width: 80px;
+    width: 80px;
   }
 
   .logos {
-      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-      gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 1rem;
   }
 }

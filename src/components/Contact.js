@@ -5,6 +5,8 @@ import githubLogo from '../images/github.png';
 import linkedinLogo from '../images/linkedin.png';
 import facebookLogo from '../images/facebook.png';
 import discordLogo from '../images/discord.png';
+// eslint-disable-next-line
+import Form from './Form.js';
 
 const Contact = () => {
     return (
@@ -12,7 +14,7 @@ const Contact = () => {
             <div className="container">
                 <section className="section">
                     <h2>Contact Info</h2>
-                    <Link id="anchor" to="/form" className="button">Send message</Link>
+                    <Link id="anchor" to="/form">Send message</Link>
                 </section>
                 <section className="section background">
                     <h2>Background</h2>

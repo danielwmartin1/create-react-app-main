@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+// eslint-disable-next-line
+// import Contact from './Contact';
 
 function Form() {
     const [email, setEmail] = useState('');
@@ -14,15 +16,40 @@ function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
+        if (!email || !message) {
+            alert('Please fill out both fields.');
+            return;
+        }
+
+        // You can add additional logic here, such as sending the form data to an API or performing validation
+        fetch('https://formspree.io/f/mrbgkbky', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, message })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Form submitted successfully!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('There was an error submitting the form.');
+        });
+        // Reset form fields
+        setEmail('');
+        setMessage('');
         console.log('Form submitted with:', { email, message });
     };
 
     return (
         <div className="form-container">
             <form
-                action="https://formspree.io/f/mrbgkbky" // Ensure this URL is correct
+                action="https://formspree.io/f/mrbgkbky"
                 method="POST"
+                target="_blank"
                 onSubmit={handleSubmit}
                 style={{
                     textAlign: 'center',

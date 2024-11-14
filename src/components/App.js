@@ -8,6 +8,7 @@ import '../App.css';
 import Contact from './Contact';
 // eslint-disable-next-line
 import Projects from './Projects';
+import Form from './Form';
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
         <Footer />
       </div>

@@ -1,18 +1,15 @@
 import React from 'react';
+// eslint-disable-next-line
 import { Link } from 'react-router-dom';
 import '../App.css';
 import "../script.js";
+import NavBar from './NavBar.js';
 
 function Header() {
   return (
     <header>
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><a href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub Repos</a></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
+        <NavBar />
       </nav>
     </header>
   );
