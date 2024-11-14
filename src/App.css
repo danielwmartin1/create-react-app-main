@@ -27,27 +27,6 @@ body {
   line-height: 1.6;
 }
 
-/* About Page Styles */
-body.about {
-  background-image: url('./images/blueswirl.jpg');
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  overflow: auto;
-  flex: 1;
-}
-
-/* Contact Page Styles */
-body.contact {
-  background-image: url('./images/bluelines.jpg');
-}
-
 button {
   background-color: rgb(33, 66, 150);
   color: aqua;
@@ -63,6 +42,13 @@ button:hover {
 button:active {
   color: rgb(0, 255, 30);
   background-color: blue;
+}
+
+.section {
+  padding: 20px;
+  margin: 20px 0;
+  color: var(--text-color);
+  border-radius: 5px;
 }
 
 .section {
@@ -89,14 +75,16 @@ img {
   font-weight: bold;
 }
 
-.about {
-  margin-bottom: 4rem;
-}
-
-
 .find { 
   color: white;
   font-size: 14px;
+}
+
+body {
+  background-image: url('./images/bluelines.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #contact_main {
@@ -123,20 +111,6 @@ h2 {
   padding: 1rem;
 }
 
-/* Form Page Styles */
-body.form {
-  background-image: url('./images/blueribbon.jpg');
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10rem;
-}
-
-/* Common Styles */
 .about-me-email {
   color: var(--primary-color);
   text-decoration: none;
@@ -158,6 +132,17 @@ body.form {
 .about-me-email:focus {
   margin-top: 0;
   margin-bottom: 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  overflow: auto;
+  flex: 1;
 }
 
 footer {
@@ -271,13 +256,6 @@ header ul {
 
 .p {
   width: 90%;
-}
-
-.section {
-  padding: 20px;
-  margin: 20px 0;
-  color: var(--text-color);
-  border-radius: 5px;
 }
 
 #experience {

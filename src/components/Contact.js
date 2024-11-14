@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import githubLogo from '../images/github.png';
+import linkedinLogo from '../images/linkedin.png';
+import facebookLogo from '../images/facebook.png';
+import discordLogo from '../images/discord.png';
 
 const Contact = () => {
     return (
@@ -17,18 +21,18 @@ const Contact = () => {
             </div>
             <div className="find">
                 <h2>Find me on:</h2>
-                <div className="social-icons">
+                <div className="social-icons" style={{ display: 'flex' }}>
                     <a className="icon" href="https://www.github.com/danielwmartin1">
-                        <img src={process.env.PUBLIC_URL + '/images/github.png'} alt="GitHub" />
+                        <img className="logo" src={githubLogo} alt="GitHub Logo" />
                     </a>
                     <a className="icon" href="https://www.linkedin.com/in/danielmartin82/">
-                        <img src={process.env.PUBLIC_URL + '/images/linkedin.png'} alt="LinkedIn" />
+                        <img className="logo" src={linkedinLogo} alt="Linkedin Logo" />
                     </a>
                     <a className="icon" href="https://www.facebook.com/dwm1982">
-                        <img src={process.env.PUBLIC_URL + '/images/facebook.png'} alt="Facebook" />
+                        <img className="logo" src={facebookLogo} alt="Facebook" />
                     </a>
                     <a className="icon" href="https://www.discord.com/dwm1982/780270744650514443">
-                        <img src={process.env.PUBLIC_URL + '/images/discord.png'} alt="Discord" />
+                        <img className="logo" src={discordLogo} alt="Discord" />
                     </a>
                 </div>
             </div>

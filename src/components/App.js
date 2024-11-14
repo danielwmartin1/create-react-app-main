@@ -6,6 +6,8 @@ import Main from './Main';
 import About from './About';
 import '../App.css';
 import Contact from './Contact';
+import "https://code.jquery.com/jquery-3.6.0.min.js";
+import "../script.js";
 
 function App() {
   return (
