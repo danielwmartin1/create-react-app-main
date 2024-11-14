@@ -21,7 +21,7 @@ function Form() {
     return (
         <div className="form-container">
             <form
-                action="https://formspree.io/f/mrbgkbky"
+                action="https://formspree.io/f/mrbgkbky" // Ensure this URL is correct
                 method="POST"
                 onSubmit={handleSubmit}
                 style={{
