@@ -89,6 +89,11 @@ img {
   font-weight: bold;
 }
 
+.about {
+  margin-bottom: 4rem;
+}
+
+
 .find { 
   color: white;
   font-size: 14px;

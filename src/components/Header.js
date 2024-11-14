@@ -1,14 +1,20 @@
 import React from 'react';
-import NavBar from './NavBar';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
-const Header = () => (
-  <header>
-    <nav>
-      <NavBar />
-    </nav>
-    <button type="button" className="menu-toggle">Menu</button>
-  </header>
-);
+function Header() {
+  return (
+    <header>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to={{ pathname: "https://github.com" }} target="_blank">Projects</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
 
 export default Header;
