@@ -16,6 +16,7 @@ import mongodbLogo from '../images/mongodb.png';
 import sqlLogo from '../images/SQL.png';
 import pythonLogo from '../images/Python.png';
 import csharpLogo from '../images/Csharp.png';
+import vercelLogo from '../images/vercel.png';
 
 const Main = () => (
   <div className="container main">
@@ -37,6 +38,7 @@ const Main = () => (
         <img className="logo" src={jsLogo} alt="JavaScript Logo" />
         <img className="logo" src={reactLogo} alt="React Logo" />
         <img className="logo" src={nodeLogo} alt="Node.js Logo" />
+        <img className="logo" src={vercelLogo} alt="Vercel Logo" />
         <img className="logo" src={expressLogo} alt="Express.js Logo" />
         <img className="logo" src={mongodbLogo} alt="MongoDB Logo" />
         <img className="logo" src={sqlLogo} alt="SQL Logo" />
