@@ -275,6 +275,19 @@ img {
   margin-top: 1rem;
 }
 
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
 h2 {
   font-size: 2em;
   text-align: center;
