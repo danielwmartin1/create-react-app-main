@@ -40,6 +40,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
 }
 
 button {
@@ -97,7 +98,7 @@ header {
   text-align: center;
 }
 
-header a {
+.listItem {
   color: var(--primary-color);
   text-decoration: none;
   text-transform: uppercase;
@@ -105,15 +106,15 @@ header a {
   transition: color 0.3s ease;
 }
 
-header a:hover {
+.listItem a:hover {
   color: var(--secondary-color);
 }
 
-header a:active {
+.listItem:active {
   color: var(--tertiary-color);
 }
 
-header li {
+.listItem {
   padding: 0 var(--padding);
 }
 
@@ -128,10 +129,6 @@ header ul {
 img {
   width: 60px;
   margin: var(--margin);
-}
-
-li a:active {
-  color: var(--tertiary-color);
 }
 
 .logo {
@@ -304,6 +301,28 @@ li a:active {
   text-decoration: none;
   font-size: 1.2rem;
   margin: 0.5rem;
+  color: var(--text-color);
+}
+
+.submit-button {
+  background-color: var(--button-background-color);
+  width: 40%;
+  text-align: center;
+  color: var(--text-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0.5rem;
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.submit-button:active {
+  color: var(--tertiary-color) !important;
 }
 
 h2 {
