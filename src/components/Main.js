@@ -18,6 +18,25 @@ import pythonLogo from '../images/Python.png';
 import csharpLogo from '../images/Csharp.png';
 import vercelLogo from '../images/vercel.png';
 
+const logos = [
+  { src: visualStudioLogo, name: 'Visual Studio' },
+  { src: vscodeLogo, name: 'VS Code' },
+  { src: githubLogo, name: 'GitHub' },
+  { src: gitLogo, name: 'Git' },
+  { src: htmlLogo, name: 'HTML' },
+  { src: cssLogo, name: 'CSS' },
+  { src: bootstrapLogo, name: 'Bootstrap' },
+  { src: jsLogo, name: 'JavaScript' },
+  { src: reactLogo, name: 'React' },
+  { src: nodeLogo, name: 'Node.js' },
+  { src: expressLogo, name: 'Express' },
+  { src: mongodbLogo, name: 'MongoDB' },
+  { src: sqlLogo, name: 'SQL' },
+  { src: pythonLogo, name: 'Python' },
+  { src: csharpLogo, name: 'C#' },
+  { src: vercelLogo, name: 'Vercel' },
+];
+
 const Main = () => (
   <div className="container main">
     <img id="profile" src={profileImg} alt="Profile" />
@@ -28,22 +47,9 @@ const Main = () => (
     <div className="container logo-container">
       <h2 id="tech">Technologies</h2>
       <div className="logos">
-        <img className="logo" src={visualStudioLogo} alt="Visual Studio Logo" />
-        <img className="logo" src={vscodeLogo} alt="VS Code Logo" />
-        <img className="logo" src={githubLogo} alt="GitHub Logo" />
-        <img className="logo" src={gitLogo} alt="Git Logo" />
-        <img className="logo" src={htmlLogo} alt="HTML Logo" />
-        <img className="logo" src={cssLogo} alt="CSS Logo" />
-        <img className="logo" src={bootstrapLogo} alt="Bootstrap Logo" />
-        <img className="logo" src={jsLogo} alt="JavaScript Logo" />
-        <img className="logo" src={reactLogo} alt="React Logo" />
-        <img className="logo" src={nodeLogo} alt="Node.js Logo" />
-        <img className="logo" src={vercelLogo} alt="Vercel Logo" />
-        <img className="logo" src={expressLogo} alt="Express.js Logo" />
-        <img className="logo" src={mongodbLogo} alt="MongoDB Logo" />
-        <img className="logo" src={sqlLogo} alt="SQL Logo" />
-        <img className="logo" src={pythonLogo} alt="Python Logo" />
-        <img className="logo" src={csharpLogo} alt="C# Logo" />
+        {logos.map((logo, index) => (
+          <img key={index} className="logo" src={logo.src} alt={`${logo.name} Logo`} />
+        ))}
       </div>
     </div>
   </div>
