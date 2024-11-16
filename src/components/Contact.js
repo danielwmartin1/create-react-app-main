@@ -24,16 +24,16 @@ const Contact = () => {
             <div className="find">
                 <h2>Find me on:</h2>
                 <div className="social-icons" style={{ display: 'flex' }}>
-                    <a className="icon" href="https://www.github.com/danielwmartin1">
+                    <a className="icon" href="https://www.github.com/danielwmartin1" target="_blank" rel="noopener noreferrer">
                         <img className="logo" src={githubLogo} alt="GitHub Logo" />
                     </a>
-                    <a className="icon" href="https://www.linkedin.com/in/danielmartin82/">
+                    <a className="icon" href="https://www.linkedin.com/in/danielmartin82/" target="_blank" rel="noopener noreferrer">
                         <img className="logo" src={linkedinLogo} alt="Linkedin Logo" />
                     </a>
-                    <a className="icon" href="https://www.facebook.com/dwm1982">
+                    <a className="icon" href="https://www.facebook.com/dwm1982" target="_blank" rel="noopener noreferrer">
                         <img className="logo" src={facebookLogo} alt="Facebook" />
                     </a>
-                    <a className="icon" href="https://www.discord.com/dwm1982/780270744650514443">
+                    <a className="icon" href="https://www.discord.com/dwm1982/780270744650514443" target="_blank" rel="noopener noreferrer">
                         <img className="logo" src={discordLogo} alt="Discord" />
                     </a>
                 </div>
