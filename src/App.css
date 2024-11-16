@@ -148,6 +148,8 @@ img {
   padding: var(--padding);
   margin-bottom: var(--margin);
   margin-right: 2.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {

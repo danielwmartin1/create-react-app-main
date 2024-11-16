@@ -35,7 +35,7 @@ const NavBar = () => {
             <ul className="nav-items">
               <li className="listItem" onClick={closeMenu}><Link to="/">Home</Link></li>
               <li className="listItem" onClick={closeMenu}><Link to="/about">About</Link></li>
-              <li className="listItem" onClick={closeMenu}><a href="https://github.com/stars/danielwmartin1/lists/projects" target="_blank" rel="noopener noreferrer">Projects</a></li>
+              <li className="listItem" onClick={closeMenu}><Link to="/projects">Projects</Link></li>
               <li className="listItem" onClick={closeMenu}><Link to="/contact">Contact</Link></li>
             </ul>
           )}
@@ -44,7 +44,7 @@ const NavBar = () => {
         <ul className="nav-items">
           <li className="listItem" ><Link to="/">Home</Link></li>
           <li className="listItem" ><Link to="/about">About</Link></li>
-          <li className="listItem" ><a href="https://github.com/stars/danielwmartin1/lists/projects" target="_blank" rel="noopener noreferrer">Projects</a></li>
+          <li className="listItem" ><Link to="/projects">Projects</Link></li>
           <li className="listItem" ><Link to="/contact">Contact</Link></li>
         </ul>
       )}
