@@ -69,14 +69,15 @@ button:active {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: var(--background-color);
   color: var(--text-color);
   text-align: center;
   border-top: 3px solid var(--primary-color);
-  padding: var(--padding);
+  margin-top: 2rem;
+  padding: 0.5rem;
 }
 
 header {

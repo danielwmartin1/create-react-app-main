@@ -20,6 +20,10 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav>
       {isMobile ? (
@@ -29,10 +33,10 @@ const NavBar = () => {
           </button>
           {isOpen && (
             <ul className="nav-items">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><a href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">Projects</a></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li onClick={closeMenu}><Link to="/">Home</Link></li>
+              <li onClick={closeMenu}><Link to="/about">About</Link></li>
+              <li onClick={closeMenu}><a href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">Projects</a></li>
+              <li onClick={closeMenu}><Link to="/contact">Contact</Link></li>
             </ul>
           )}
         </div>
