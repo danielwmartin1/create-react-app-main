@@ -6,6 +6,11 @@
   --background-color: #183250;
   --text-color: #fff;
   --font-family: 'Roboto', sans-serif;
+  --font-size-large: 2em;
+  --font-size-medium: 1.5em;
+  --font-size-small: 1em;
+  --padding: 20px;
+  --margin: 20px;
 }
 
 /* Styles */
@@ -15,12 +20,9 @@
   box-sizing: border-box;
 }
 
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
 
 body {
   font-family: var(--font-family);
@@ -33,9 +35,6 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -66,16 +65,8 @@ button:active {
   margin: auto;
   overflow: auto;
   flex: 1;
+  color: var(--text-color);
 }
-
-div>.container {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 
 footer {
   position: fixed;
@@ -85,14 +76,14 @@ footer {
   color: var(--text-color);
   text-align: center;
   border-top: 3px solid var(--primary-color);
-  padding: 10px;
+  padding: var(--padding);
 }
 
 header {
   background: var(--background-color);
   color: var(--text-color);
-  padding: 10px 0 !important;
-  margin: 0 !important;
+  padding: var(--padding) 0;
+  margin: 0;
   border-bottom: 3px solid var(--primary-color);
   display: flex;
   justify-content: center;
@@ -104,7 +95,7 @@ header a {
   color: var(--primary-color);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: var(--font-size-small);
   transition: color 0.3s ease;
 }
 
@@ -113,7 +104,7 @@ header a:hover {
 }
 
 header li {
-  padding: 0 20px;
+  padding: 0 var(--padding);
 }
 
 header ul {
@@ -126,7 +117,7 @@ header ul {
 
 img {
   width: 60px;
-  margin: 2rem;
+  margin: var(--margin);
 }
 
 .logo {
@@ -148,15 +139,15 @@ img {
   text-align: center;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  gap: 3rem;
-  padding: 20px;
-  margin-bottom: 3rem;
-  margin-right: 3rem;
+  gap: var(--margin);
+  padding: var(--padding);
+  margin-bottom: var(--margin);
+  margin-right: 2.5rem;
 }
 
 .main {
   margin: auto;
-  padding: 20px;
+  padding: var(--padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,7 +160,7 @@ img {
 }
 
 .main h1 {
-  font-size: 2em;
+  font-size: var(--font-size-large);
   color: #282c34;
 }
 
@@ -181,7 +172,7 @@ img {
 .menu-toggle {
   cursor: pointer;
   background-color: var(--primary-color);
-  color: #282c34 !important;
+  color: #282c34;
   border: none;
   padding: 5px;
   border-radius: 5px;
@@ -201,20 +192,16 @@ img {
 }
 
 .section {
-  padding: 20px;
-  margin: 20px 0;
+  padding: var(--padding);
+  margin: var(--margin) 0;
   color: var(--text-color);
   border-radius: 5px;
-}
-
-.section {
-  margin: 2rem;
 }
 
 #anchor {
   color: aqua;
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--font-size-small);
   font-weight: bold;
 }
 
@@ -223,7 +210,7 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: var(--margin);
 }
 
 #experience {
@@ -231,17 +218,17 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: var(--margin);
 }
 
 #name {
-  font-size: 2em;
-  margin: 1.5rem;
+  font-size: var(--font-size-large);
+  margin: var(--margin);
   color: var(--text-color);
 }
 
 #profile {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin);
   border-radius: 50%;
   width: 150px;
 }
@@ -249,7 +236,7 @@ img {
 #tech {
   text-align: center;
   color: var(--text-color);
-  padding-top: 2rem;
+  padding-top: var(--padding);
 }
 
 .about-me-email {
@@ -276,18 +263,15 @@ img {
 }
 
 .background {
-  padding: 1rem;
-  margin: 2rem;
+  padding: var(--padding);
+  margin: var(--margin);
   border-radius: 5px;
 }
 
 .find {
   color: white;
   font-size: 14px;
-}
-
-.find {
-  margin-top: 1rem;
+  margin-top: var(--margin);
 }
 
 .nav-items {
@@ -304,9 +288,9 @@ img {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: var(--font-size-large);
   text-align: center;
-  padding: 1rem;
+  padding: var(--padding);
 }
 
 /* Media Queries for Responsiveness */
@@ -399,4 +383,3 @@ h2 {
     gap: 1rem;
   }
 }
-
