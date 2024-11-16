@@ -49,10 +49,14 @@ function Form() {
         fontWeight: 'bold',
         color: 'black',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        textAlign: 'center'
     };
 
     const inputStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         width: '100%',
         padding: '12px',
         border: '1px solid #ccc',
@@ -63,7 +67,9 @@ function Form() {
         resize: 'vertical',
         fontSize: '14px',
         fontFamily: 'Arial, sans-serif',
-        color: 'black'
+        color: 'black',
+        textAlign: 'center'
+
     };
 
     const textareaStyle = {

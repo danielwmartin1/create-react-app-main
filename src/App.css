@@ -279,6 +279,21 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.anchor, a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+}
+
+.anchor:hover {
+  color: var(--secondary-color);
+}
+
+.anchor:active {
+  color: yellowgreen;
+}
+
 .background {
   padding: var(--padding);
   margin: var(--margin);
