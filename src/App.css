@@ -121,6 +121,10 @@ img {
   margin: var(--margin);
 }
 
+li>a:active {
+  color: rgb(132, 166, 9);
+}
+
 .logo {
   max-width: 100%;
   height: auto;
