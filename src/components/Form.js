@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-// eslint-disable-next-line
-// import Contact from './Contact';
 
 function Form() {
     const [email, setEmail] = useState('');

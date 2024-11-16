@@ -14,7 +14,7 @@ import nodeLogo from '../images/node.png';
 import expressLogo from '../images/express.webp';
 import mongodbLogo from '../images/mongodb.png';
 import sqlLogo from '../images/SQL.png';
-import pythonLogo from '../images/Python.png';
+import pythonDjangoLogo from '..//images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
 import vercelLogo from '../images/vercel.png';
 
@@ -32,7 +32,7 @@ const logos = [
   { src: expressLogo, name: 'Express' },
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
-  { src: pythonLogo, name: 'Python' },
+  { src: pythonDjangoLogo, name: 'Python/Django' },
   { src: csharpLogo, name: 'C#' },
   { src: vercelLogo, name: 'Vercel' },
 ];
