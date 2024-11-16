@@ -151,6 +151,7 @@ img {
   gap: 3rem;
   padding: 20px;
   margin-bottom: 3rem;
+  margin-right: 3rem;
 }
 
 .main {
@@ -397,3 +398,4 @@ h2 {
     gap: 1rem;
   }
 }
+
