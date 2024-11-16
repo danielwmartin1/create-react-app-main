@@ -56,7 +56,7 @@ function Form() {
                     display: 'flex',
                     flexDirection: 'column',
                     fontFamily: 'Arial, sans-serif',
-                    margin: '50px auto',
+                    margin: '5rem auto',
                     width: '50%',
                     backgroundColor: '#fff',
                     padding: '20px',
@@ -154,17 +154,6 @@ function Form() {
                 </div>
             </form>
             <section style={{ color: 'white', display: 'flex', flexDirection: 'column', padding: '3rem'}}>
-                <h2 style={{ textAlign: 'center' }}>Contact Info</h2>
-                <a 
-                    href="mailto:danielwmartin1@gmail.com" 
-                    style={{ color: 'aqua', textAlign: 'center', }}
-                    onMouseOver={(e) => (e.target.style.color = 'teal')}
-                    onMouseOut={(e) => (e.target.style.color = 'aqua')}
-                    onMouseDown={(e) => (e.target.style.color = 'lightgreen')}
-                    onMouseUp={(e) => (e.target.style.color = 'lightblue')}
-                >
-                    danielwmartin1@gmail.com
-                </a>
                 <p style={{textAlign: 'center', fontSize: '1.1rem', paddingTop: '1.5rem' }}>Please feel free to contact me with any questions or feedback. I will get back to you as soon as possible.</p>
             </section>
         </div>
