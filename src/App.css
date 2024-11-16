@@ -276,7 +276,7 @@ li a:active {
 .find {
   color: white;
   font-size: 14px;
-  margin-top: var(--margin);
+  margin-top: 2rem;
 }
 
 .nav-items {
