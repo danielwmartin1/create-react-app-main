@@ -4,7 +4,10 @@
   --secondary-color: #0fa9c1;
   --tertiary-color: #124047;
   --background-color: #183250;
-  --text-color: #fff;
+  --text-color: #ffffff;
+  --button-background-color: #214296;
+  --button-hover-color: #0fa9c1;
+  --button-active-color: #124047;
   --font-family: 'Roboto', sans-serif;
   --font-size-large: 2em;
   --font-size-medium: 1.5em;
@@ -40,20 +43,19 @@ body {
 }
 
 button {
-  background-color: rgb(33, 66, 150);
-  color: aqua;
+  background-color: var(--button-background-color);
+  color: var(--text-color);
   padding: 10px;
   border-radius: 5px;
 }
 
 button:hover {
-  color: yellow;
+  background-color: var(--button-hover-color);
   cursor: pointer;
 }
 
 button:active {
-  color: rgb(0, 255, 30);
-  background-color: blue;
+  background-color: var(--button-active-color);
 }
 
 .container {
@@ -107,6 +109,10 @@ header a:hover {
   color: var(--secondary-color);
 }
 
+header a:active {
+  color: var(--tertiary-color);
+}
+
 header li {
   padding: 0 var(--padding);
 }
@@ -125,7 +131,7 @@ img {
 }
 
 li a:active {
-  color: rgb(132, 166, 9);
+  color: var(--tertiary-color);
 }
 
 .logo {
@@ -137,7 +143,7 @@ li a:active {
 }
 
 .logo-container {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .logos {
@@ -166,7 +172,7 @@ li a:active {
 
 .main h1 {
   font-size: var(--font-size-large);
-  color: #282c34;
+  color: var(--primary-color);
 }
 
 .main p {
@@ -177,7 +183,7 @@ li a:active {
 .menu-toggle {
   cursor: pointer;
   background-color: var(--primary-color);
-  color: #282c34;
+  color: var(--background-color);
   border: none;
   padding: 5px;
   border-radius: 5px;
@@ -204,10 +210,18 @@ li a:active {
 }
 
 #anchor {
-  color: aqua;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: var(--font-size-small);
   font-weight: bold;
+}
+
+#anchor:hover {
+  color: var(--secondary-color);
+}
+
+#anchor:active {
+  color: var(--tertiary-color);
 }
 
 #contact_main {
@@ -274,7 +288,7 @@ li a:active {
 }
 
 .find {
-  color: white;
+  color: var(--text-color);
   font-size: 14px;
   margin-top: 2.5rem;
 }
