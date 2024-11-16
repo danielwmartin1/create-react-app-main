@@ -236,6 +236,7 @@ img {
 
 #name {
   font-size: 2em;
+  margin: 1.5rem;
   color: var(--text-color);
 }
 
