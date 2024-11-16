@@ -44,19 +44,47 @@ function Form() {
         console.log('Form submitted with:', { email, message });
     };
 
+    const labelStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '10px',
+        fontWeight: 'bold',
+        color: 'black',
+        justifyContent: 'center',
+        alignItems: 'center'
+    };
+
+    const inputStyle = {
+        width: '100%',
+        padding: '12px',
+        border: '1px solid #ccc',
+        borderRadius: '4px',
+        boxSizing: 'border-box',
+        marginTop: '6px',
+        marginBottom: '16px',
+        resize: 'vertical',
+        fontSize: '14px',
+        fontFamily: 'Arial, sans-serif',
+        color: 'black'
+    };
+
+    const textareaStyle = {
+        ...inputStyle,
+        textAlign: 'center',
+    };
+
     return (
         <div className="form-container">
             <form
                 action="https://formspree.io/f/mrbgkbky"
                 method="POST"
-                target="_blank"
                 onSubmit={handleSubmit}
                 style={{
                     textAlign: 'center',
                     display: 'flex',
                     flexDirection: 'column',
                     fontFamily: 'Arial, sans-serif',
-                    margin: '5rem auto',
+                    margin: '7rem auto',
                     width: '50%',
                     backgroundColor: '#fff',
                     padding: '20px',
@@ -64,14 +92,7 @@ function Form() {
                     borderRadius: '8px'
                 }}
             >
-                <label
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        margin: '10px',
-                        fontWeight: 'bold'
-                    }}
-                >
+                <label style={labelStyle}>
                     Your email:
                     <input
                         type="email"
@@ -81,27 +102,10 @@ function Form() {
                         placeholder="you@example.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        style={{
-                            width: '100%',
-                            padding: '12px',
-                            border: '1px solid #ccc',
-                            borderRadius: '4px',
-                            boxSizing: 'border-box',
-                            marginTop: '6px',
-                            marginBottom: '16px',
-                            resize: 'vertical',
-                            textAlign: 'center'
-                        }}
+                        style={inputStyle}
                     />
                 </label>
-                <label
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        margin: '10px',
-                        fontWeight: 'bold'
-                    }}
-                >
+                <label style={labelStyle}>
                     Your message:
                     <textarea
                         name="message"
@@ -110,19 +114,7 @@ function Form() {
                         placeholder="Your message here"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        style={{
-                            width: '100%',
-                            padding: '12px',
-                            border: '1px solid #ccc',
-                            borderRadius: '4px',
-                            boxSizing: 'border-box',
-                            marginTop: '6px',
-                            marginBottom: '16px',
-                            resize: 'vertical',
-                            textAlign: 'center',
-                            fontSize: '14px',
-                            fontFamily: 'Arial, sans-serif'
-                        }}
+                        style={textareaStyle}
                     ></textarea>
                 </label>
                 <div
