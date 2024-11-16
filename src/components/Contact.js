@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
             <div className="find">
                 <h2>Find me on:</h2>
-                <div className="social-icons" style={{ display: 'flex' }}>
+                <div className="social-icons" style={{ display: 'flex', justifyContent:'center', alignItems: 'center' }}>
                     <a className="icon" href="https://www.github.com/danielwmartin1" target="_blank" rel="noopener noreferrer">
                         <img className="logo" src={githubLogo} alt="GitHub Logo" />
                     </a>
@@ -34,7 +34,7 @@ const Contact = () => {
                         <img className="logo" src={facebookLogo} alt="Facebook" />
                     </a>
                     <a className="icon" href="https://www.discord.com/dwm1982/780270744650514443" target="_blank" rel="noopener noreferrer">
-                        <img className="logo" src={discordLogo} alt="Discord" />
+                        <img className="logo" style={{height: '75px', width: '75px', }} src={discordLogo} alt="Discord" />
                     </a>
                 </div>
             </div>
