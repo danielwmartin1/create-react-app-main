@@ -30,7 +30,7 @@ code {
 
 body {
   font-family: var(--font-family);
-  background-image: url('./images/bluelines.jpg');
+  background-image: url('./images/bluegradient.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -127,6 +127,10 @@ header ul {
 img {
   width: 60px;
   margin: var(--margin);
+}
+
+img.logo {
+  z-index: 1000 !important;
 }
 
 .logo {
