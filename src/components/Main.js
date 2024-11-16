@@ -24,7 +24,7 @@ const Main = () => (
     <h1 id="name">Daniel Martin</h1>
     <p className="p">Hello! I'm Daniel, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and enjoy learning new technologies. In my free time, I like to work on personal projects and contribute to open-source communities.</p>
     <h2 id="experience">Experience</h2>
-    <p className="p">With hands-on experience in web development, I have honed my skills in HTML, CSS, JavaScript, and various modern frameworks. My journey has been enriched by working on diverse projects that range from small business websites to large-scale web applications. This practical experience has provided me with a deep understanding of web technologies.</p>
+    <p className="p">With hands-on experience in web development, I have honed my skills in HTML, CSS, JavaScript, and various modern frameworks like React. My journey has been enriched by working on diverse projects that range from small business websites to large-scale web applications. This practical experience has provided me with a deep understanding of web technologies.</p>
     <div className="container logo-container">
       <h2 id="tech">Technologies</h2>
       <div className="logos">
