@@ -4,7 +4,6 @@ import './index.css';
 import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
-import './App.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
