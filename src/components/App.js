@@ -6,7 +6,6 @@ import Home from './Home';
 import About from './About';
 import '../App.css';
 import Contact from './Contact';
-// eslint-disable-next-line
 import Projects from './Projects';
 import Form from './Form';
 
