@@ -5,8 +5,7 @@ const Projects = () => {
     const projectLinks = [
         { href: "https://tic-tac-toe-kohl-iota.vercel.app/", text: "Project 1" },
         { href: "https://todolist-frontend-tau.vercel.app/", text: "Project 2" },
-        { href: "https://todolist-backend-six-woad.vercel.app/tasks/", text: "Project 3" },
-        { href: "https://weather-app-danielwmartin1s-projects.vercel.app/", text: "Project 4" }
+        { href: "https://weather-app-danielwmartin1s-projects.vercel.app/", text: "Project 3" }
     ];
 
     return (
