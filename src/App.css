@@ -431,7 +431,7 @@ img.logo {
 
 @media (max-width: 768px) {
   footer {
-    padding: auto;
+    padding: 10px;
   }
 
   .main h1 {

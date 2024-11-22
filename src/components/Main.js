@@ -18,6 +18,7 @@ import pythonDjangoLogo from '..//images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
 import vercelLogo from '../images/vercel.png';
 
+
 const logos = [
   { src: visualStudioLogo, name: 'Visual Studio' },
   { src: vscodeLogo, name: 'VS Code' },
