@@ -3,7 +3,7 @@ import "../App.css";
 
 const Projects = () => {
     return (
-        <div className='container main' style={{marginTop: '5rem', border: '3px solid aqua'}}>
+        <div className='container main' style={{ border: '3px solid aqua', marginTop: '2rem'}}>
             <h1 style={{margin: '2rem', color: 'white'}} >Projects</h1>
             <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
                 Visit my GitHub repository

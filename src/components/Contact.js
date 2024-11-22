@@ -9,7 +9,7 @@ import discordLogo from '../images/discord.png';
 
 const Contact = () => {
     return (
-        <main id="contact_main" className="container" style={{ textAlign: 'center' }}>
+        <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <div className="container">
                 <section className="section">
                     <h2>Contact Info</h2>

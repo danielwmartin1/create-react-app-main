@@ -367,7 +367,7 @@ img.logo {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: var(--margin);
+
 }
 
 #experience {
