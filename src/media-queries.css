@@ -1,0 +1,87 @@
+@import './variables.css';
+
+@media (max-width: 1024px) {
+  .main h1 {
+    font-size: 1.8em;
+  }
+
+  .main p {
+    font-size: 1.1em;
+  }
+
+  #name {
+    font-size: 1.8em;
+  }
+
+  #profile {
+    width: 130px;
+  }
+
+  .logos {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: auto;
+  }
+
+  .main h1 {
+    font-size: 1.5em;
+  }
+
+  .main p {
+    font-size: 1em;
+  }
+
+  #name {
+    font-size: 1.5em;
+  }
+
+  #profile {
+    width: 100px;
+  }
+
+  .logos {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .main h1 {
+    font-size: 1.2em;
+  }
+
+  .main p {
+    font-size: 0.9em;
+  }
+
+  #profile {
+    width: 80px;
+  }
+
+  .logos {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 1rem;
+  }
+}

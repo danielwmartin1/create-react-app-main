@@ -1,4 +1,12 @@
 /* Variables */
+
+@import './variables.css';
+@import './global.css';
+@import './header.css';
+@import './footer.css';
+@import './buttons.css';
+@import './main.css';
+@import './media-queries.css';
 :root {
   --primary-color: #61dafb;
   --secondary-color: #0fa9c1;
