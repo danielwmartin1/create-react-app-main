@@ -36,7 +36,26 @@ function Form() {
         })
         .then(data => {
             console.log('Success:', data);
-            alert('Form submitted successfully!');
+            // Display a pop-up message
+            const popup = document.createElement('div');
+            popup.style.position = 'fixed';
+            popup.style.backgroundColor = 'green';
+            popup.style.top = '50%';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, -50%)';
+            popup.style.backgroundColor = 'red';
+            popup.style.color = 'white';
+            popup.style.padding = '30px'; // Increased padding for larger size
+            popup.style.borderRadius = '6px';
+            popup.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+            popup.style.fontSize = '18px'; // Increased font size
+            popup.innerText = 'Form submitted successfully!';
+            document.body.appendChild(popup);
+
+            // Remove the pop-up after 3 seconds
+            setTimeout(() => {
+                document.body.removeChild(popup);
+            }, 3000);
             // Reset form fields
             setEmail('');
             setMessage('');
@@ -44,6 +63,21 @@ function Form() {
         .catch((error) => {
             console.error('Error:', error);
             alert('There was an error submitting the form.');
+                        // Display a pop-up message
+            const popup = document.createElement('div');
+            popup.style.position = 'fixed';
+            popup.style.backgroundColor = 'red';
+            popup.style.top = '50%';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, -50%)';
+            popup.style.backgroundColor = '#4CAF50';
+            popup.style.color = 'white';
+            popup.style.padding = '30px'; // Increased padding for larger size
+            popup.style.borderRadius = '6px';
+            popup.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+            popup.style.fontSize = '18px'; // Increased font size
+            popup.innerText = 'There was an error submitting the form.';
+            document.body.appendChild(popup);
         });
         console.log('Form submitted with:', { email, message });
     };
