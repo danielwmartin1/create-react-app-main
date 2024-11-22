@@ -8,6 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
 import Form from './Form';
+import '../App.css';
 
 function App() {
   return (

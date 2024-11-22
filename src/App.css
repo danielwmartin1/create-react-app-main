@@ -162,6 +162,20 @@ footer {
   z-index: 1000;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure parent takes full viewport height */
+}
+
+.container.main {
+  flex: 1; /* Allow main content to grow */
+}
+
+footer.footer {
+  position: relative; /* or static */
+}
+
 header {
   background: var(--background-color);
   color: var(--text-color);
