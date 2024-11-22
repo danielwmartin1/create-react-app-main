@@ -4,9 +4,9 @@ import "../App.css";
 const Projects = () => {
     return (
         <div className='container main' style={{ border: '3px solid aqua', marginTop: '2rem'}}>
-            <h1 style={{margin: '2rem', color: 'white'}} >Projects</h1>
+            <h1 style={{margin: '2rem', color: 'white'}} >Portfolio</h1>
             <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
-                Visit my GitHub repository
+                Visit my GitHub Repositories
             </a>
             <ul style={{ listStyleType: 'none', margin: '2rem' }}>
                 <li><a className='anchor project' href="https://tic-tac-toe-kohl-iota.vercel.app/" target="_blank" rel="noopener noreferrer">Project 1</a></li>

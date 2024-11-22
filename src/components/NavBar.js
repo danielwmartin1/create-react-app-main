@@ -35,7 +35,7 @@ const NavBar = () => {
             <ul className="nav-items">
               <li className="listItem" onClick={closeMenu}><Link to="/">Home</Link></li>
               <li className="listItem" onClick={closeMenu}><Link to="/about">About</Link></li>
-              <li className="listItem" onClick={closeMenu}><Link to="/projects">Projects</Link></li>
+              <li className="listItem" onClick={closeMenu}><Link to="/projects">Portfolio</Link></li>
               <li className="listItem" onClick={closeMenu}><Link to="/contact">Contact</Link></li>
             </ul>
           )}
