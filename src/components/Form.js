@@ -27,18 +27,24 @@ function Form() {
             },
             body: JSON.stringify({ email, message })
         })
-        .then(response => response.json())
+        .then(response => {
+            if (response.headers.get('content-type')?.includes('application/json')) {
+                return response.json();
+            } else {
+                throw new Error('Unexpected content type');
+            }
+        })
         .then(data => {
             console.log('Success:', data);
             alert('Form submitted successfully!');
+            // Reset form fields
+            setEmail('');
+            setMessage('');
         })
         .catch((error) => {
             console.error('Error:', error);
             alert('There was an error submitting the form.');
         });
-        // Reset form fields
-        setEmail('');
-        setMessage('');
         console.log('Form submitted with:', { email, message });
     };
 
