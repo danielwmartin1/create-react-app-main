@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelector('.nav-items');
 
     if (menuToggle && navItems) {
+        navItems.style.display = 'none'; // Ensure initial state is set
         menuToggle.addEventListener('click', () => {
             if (navItems.style.display === 'none' || navItems.style.display === '') {
                 navItems.style.display = 'block';
