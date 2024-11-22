@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import "../script.js";
 
 const NavBar = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 480);
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
