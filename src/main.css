@@ -24,3 +24,8 @@
   text-align: center;
   color: var(--text-color);
 }
+
+.project {    
+  color: var(--primary-color);
+  margin: 1rem;
+}
