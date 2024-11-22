@@ -21,7 +21,6 @@ button:active {
   width: 40%;
   text-align: center;
   color: var(--text-color);
-  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -35,4 +34,12 @@ button:active {
 
 .submit-button:active {
   color: var(--tertiary-color) !important;
+}
+
+
+.menu-button {
+  background-color: rgb(14, 66, 255);  
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 5px;
 }

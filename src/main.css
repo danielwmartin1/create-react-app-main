@@ -1,8 +1,6 @@
 @import './variables.css';
 
 .main {
-  margin: auto;
-  padding: var(--padding);
   display: flex;
   flex-direction: column;
   align-items: center;
