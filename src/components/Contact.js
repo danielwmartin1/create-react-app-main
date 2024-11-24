@@ -5,6 +5,7 @@ import githubLogo from '../images/github.png';
 import linkedinLogo from '../images/linkedin.png';
 import facebookLogo from '../images/facebook.png';
 import discordLogo from '../images/discord.png';
+import '../buttons.css'
 
 
 const Contact = () => {
