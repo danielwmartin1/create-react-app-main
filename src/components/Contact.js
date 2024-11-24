@@ -15,7 +15,7 @@ const Contact = () => {
                 <section className="section">
                     <h2>Contact Info</h2>
                     <Link to="/form">
-                        <button className="menu-button">Send Message</button>
+                        <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
                     </Link>
                 </section>
                 <section className="section background">
