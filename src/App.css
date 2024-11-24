@@ -185,13 +185,7 @@ img.logo {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img.logo:hover {
-  transform: scale(1.1);
-}
 
-img.logo:active {
-  transform: scale(0.9);
-}
 
 #profile {
   margin-bottom: var(--margin);
@@ -222,6 +216,19 @@ img.logo:active {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.small-logo {
+  width: 50px;
+}
+
+.small-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-logo:active {
+  transform: scale(0.9);
 }
 
 /* Media Queries for Responsiveness */

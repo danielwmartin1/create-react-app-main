@@ -12,6 +12,7 @@ import htmlLogo from '../images/HTML.png';
 import cssLogo from '../images/CSS.png';
 import jsLogo from '../images/JS.png';
 import bootstrapLogo from '../images/bootstrap.png';
+import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import nodeLogo from '../images/node.png';
 import expressLogo from '../images/express.webp';
@@ -34,6 +35,7 @@ const logos = [
   { src: cssLogo, name: 'CSS' },
   { src: jsLogo, name: 'JavaScript' },
   { src: bootstrapLogo, name: 'Bootstrap' },
+  { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
   { src: expressLogo, name: 'Express' },

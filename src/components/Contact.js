@@ -23,16 +23,16 @@ const Contact = () => {
                 <h2 className='contact'>Find me on:</h2>
                 <div className="social-icons" style={{ display: 'flex', justifyContent:'center', alignItems: 'center' }}>
                     <a className="icon" href="https://www.github.com/danielwmartin1" target="_blank" rel="noopener noreferrer">
-                        <img className="logo" src={githubLogo} alt="GitHub Logo" />
+                        <img className="small-logo" src={githubLogo} alt="GitHub" />
                     </a>
                     <a className="icon" href="https://www.linkedin.com/in/danielmartin82/" target="_blank" rel="noopener noreferrer">
-                        <img className="logo" src={linkedinLogo} alt="Linkedin Logo" />
+                        <img className="small-logo" src={linkedinLogo} alt="Linkedin" />
                     </a>
                     <a className="icon" href="https://www.facebook.com/dwm1982" target="_blank" rel="noopener noreferrer">
-                        <img className="logo" src={facebookLogo} alt="Facebook" />
+                        <img className="small-logo" src={facebookLogo} alt="Facebook" />
                     </a>
                     <a className="icon" href="https://www.discord.com/dwm1982/780270744650514443" target="_blank" rel="noopener noreferrer">
-                        <img className="logo" style={{height: '75px', width: '75px', }} src={discordLogo} alt="Discord" />
+                        <img className="small-logo" style={{height: '60px', width: '60px', }} src={discordLogo} alt="Discord" />
                     </a>
                 </div>
             </div>
