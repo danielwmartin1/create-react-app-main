@@ -39,6 +39,7 @@ button:active {
 .menu-button {
   background-color: #008CBA; /* Blue */
   color: white;
+  border-radius: 5px;
 }
 
 .menu-button:hover {
