@@ -17,6 +17,7 @@ import sqlLogo from '../images/SQL.png';
 import pythonDjangoLogo from '..//images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
 import vercelLogo from '../images/vercel.png';
+import nextjsLogo from '../images/next-js.svg';
 
 
 const logos = [
@@ -31,6 +32,7 @@ const logos = [
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
   { src: expressLogo, name: 'Express' },
+  { src: nextjsLogo, name: 'Next.JS' },
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
   { src: pythonDjangoLogo, name: 'Python/Django' },
