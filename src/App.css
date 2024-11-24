@@ -15,11 +15,7 @@
   box-sizing: border-box;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+/* Removed duplicate .app class definition */
 
 body {
   font-family: var(--font-family);
@@ -106,16 +102,14 @@ code {
 
 /* Typography */
 h2 {
-  font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
-  font-size: 1.5rem;
+  font-family: 'Bebas Neue', cursive;  font-size: 1.5rem;
   text-align: center;
   padding: var(--padding);
   color: var(--text-color);
 }
 
 .main h1 {
-  font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
-  font-size: var(--font-size-large);
+  font-family: 'Bebas Neue', cursive;  font-size: var(--font-size-large);
   color: var(--primary-color);
 }
 
@@ -123,6 +117,8 @@ h2 {
   line-height: 1.6;
   text-align: center;
   color: var(--text-color);
+  font-family: 'Bebas Neue', cursive;
+  margin: 0 0.5rem;
 }
 
 #name {

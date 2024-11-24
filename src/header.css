@@ -12,7 +12,7 @@
 
 .nav-items {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     flex: 1 1 auto;
     flex-direction: row;
