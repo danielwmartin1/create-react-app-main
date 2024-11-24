@@ -15,8 +15,6 @@
   box-sizing: border-box;
 }
 
-/* Removed duplicate .app class definition */
-
 body {
   font-family: var(--font-family);
   background-image: url('./images/bluegradient.jpg');
@@ -104,7 +102,7 @@ code {
 h2 {
   font-family: 'Bebas Neue', cursive;  font-size: 1.5rem;
   text-align: center;
-  padding: var(--padding);
+  padding: 1rem;
   color: var(--text-color);
 }
 
@@ -123,14 +121,12 @@ h2 {
 
 #name {
   font-size: var(--font-size-large);
-  margin: var(--margin);
   color: var(--text-color);
 }
 
 #tech {
   text-align: center;
   color: var(--text-color);
-  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -224,13 +220,8 @@ img.logo {
 }
 
 .logos {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  gap: var(--margin);
-  padding: var(--padding);
-  margin-bottom: var(--margin);
-  margin-right: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
