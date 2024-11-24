@@ -1,3 +1,9 @@
+:root {
+  --margin-small: 0.5rem;
+  --margin-medium: 0.75rem;
+  --padding-small: 0.5rem;
+  --padding-medium: 0.75rem;
+}
 
 * {
   margin: 0;
@@ -15,19 +21,26 @@
   height: 100vh;
   background-color: transparent;
   width: 100%;
+  padding: var(--padding-medium);
 }
-
 
 .main p {
   line-height: 1.75;
   text-align: center;
   color: var(--text-color);
-  margin: 0 0.5rem;
+  margin: var(--margin-small);
+  font-family: var(--font-family);
 }
 
 #name {
   font-size: var(--font-size-large);
   color: var(--text-color);
+  margin: var(--margin-medium);
+}
+
+#name, #experience, #tech {
+  font-family: var(--font-family);
+  margin: var(--margin-medium);
 }
 
 #experience, #tech {
@@ -35,11 +48,8 @@
   color: var(--text-color);
 }
 
-
-.heaadings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
+#contact {
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+  margin: var(--margin-small);
 }
