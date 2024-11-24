@@ -12,7 +12,7 @@
   color: var(--text-color);
   justify-content: center;
   background-position: center;
-  min-height: 50vh;
+  height: 100vh;
   background-color: transparent;
   width: 100%;
 }
