@@ -22,7 +22,6 @@
   line-height: 1.75;
   text-align: center;
   color: var(--text-color);
-  font-family: 'Bebas Neue', cursive;
   margin: 0 0.5rem;
 }
 
@@ -37,3 +36,10 @@
 }
 
 
+.heaadings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}

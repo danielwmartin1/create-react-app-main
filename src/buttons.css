@@ -11,55 +11,19 @@ button {
   transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  background-color: #008CBA; /* Default Blue */
+  color: white;
 }
 
 button:hover {
   transform: scale(1.05);
   border-color: #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #007bb5; /* Hover Blue */
 }
 
 button:active {
   transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.submit-button {
-  background-color: #4CAF50; /* Green */
-  color: white;
-}
-
-.submit-button:hover {
-  background-color: #45a049;
-}
-
-.submit-button:active {
-  background-color: #3e8e41;
-}
-
-.menu-button {
-  background-color: #008CBA; /* Blue */
-  color: white;
-  border-radius: 5px;
-}
-
-.menu-button:hover {
-  background-color: #007bb5;
-}
-
-.menu-button:active {
-  background-color: #005f87;
-}
-
-.icon-button {
-  background-color: #e7e7e7; /* Light Gray */
-  color: black;
-}
-
-.icon-button:hover {
-  background-color: #d6d6d6;
-}
-
-.icon-button:active {
-  background-color: #bcbcbc;
+  background-color: #005f87; /* Active Blue */
 }

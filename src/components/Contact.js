@@ -13,7 +13,6 @@ const Contact = () => {
         <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '6.5rem' }}>
             <div className="container">
                 <section className="section">
-                    <h2>Contact Info</h2>
                     <Link to="/form">
                         <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
                     </Link>

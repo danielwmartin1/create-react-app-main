@@ -16,6 +16,7 @@
 
 body {
   font-family: var(--font-family);
+  font-size: 16px; /* Base font size */
   background-image: url('./images/bluegradient.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +33,7 @@ body {
 a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: var(--font-size-small);
+  font-size: 0.875rem; /* 14px */
   font-weight: bold;
 }
 
@@ -44,25 +45,11 @@ a:active {
   color: yellowgreen;
 }
 
-button {
-  background-color: var(--button-background-color);
-  color: var(--text-color);
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--button-hover-color);
-}
-
-button:active {
-  background-color: var(--button-active-color);
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   color: var(--text-color);
+  font-size: 0.875rem; /* 14px */
 }
 
 /* Layout and Containers */
@@ -95,12 +82,27 @@ code {
   min-height: 100vh;
 }
 
-
 .project {    
   color: var(--primary-color);
   margin: 1rem;
+  font-size: 1rem; /* 16px */
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1rem; /* 16px */
+}
+
+.center-text {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.5rem; /* 16px */
+  font-family: var(--font-family);
+} 
 
 .about_main {
   display: flex;
@@ -108,6 +110,7 @@ code {
   justify-content: space-around;
   align-items: center;
   padding: 0 2rem 2.5rem 2.5rem;
+  font-size: 1rem; /* 16px */
 }
 
 /* Components */
@@ -117,6 +120,7 @@ code {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 1rem; /* 16px */
 }
 
 .about-me-email:hover,
@@ -149,7 +153,7 @@ code {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   margin: 0.5rem;
 }
 
@@ -206,15 +210,15 @@ img.logo {
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .main h1 {
-    font-size: 1.8em;
+    font-size: 1.125rem; /* 18px */
   }
 
   .main p {
-    font-size: 1.1em;
+    font-size: 0.875rem; /* 14px */
   }
 
   #name {
-    font-size: 1.8em;
+    font-size: 1.125rem; /* 18px */
   }
 
   #profile {
@@ -236,15 +240,15 @@ img.logo {
   }
 
   .main h1 {
-    font-size: 1.5em;
+    font-size: 0.9375rem; /* 15px */
   }
 
   .main p {
-    font-size: 1em;
+    font-size: 0.75rem; /* 12px */
   }
 
   #name {
-    font-size: 1.5em;
+    font-size: 0.9375rem; /* 15px */
   }
 
   #profile {
@@ -270,11 +274,11 @@ img.logo {
   }
 
   .main h1 {
-    font-size: 1.2em;
+    font-size: 0.75rem; /* 12px */
   }
 
   .main p {
-    font-size: 0.9em;
+    font-size: 0.5625rem; /* 9px */
   }
 
   #profile {

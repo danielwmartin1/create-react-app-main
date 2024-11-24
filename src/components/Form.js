@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import '../buttons.css';
 
 function Form() {
     const [email, setEmail] = useState('');
@@ -164,7 +165,8 @@ function Form() {
                 <div
                     style={{
                         display: 'flex',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        alignContent: 'center',
                     }}
                 >
                     <button
