@@ -1,69 +1,76 @@
 @import url('./variables.css');
 
 button {
-  background-color: var(--button-background-color);
-  color: var(--text-color);
   padding: 10px 20px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   font-size: 16px;
   margin: 0.5rem;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
-  background-color: var(--button-hover-color);
   transform: scale(1.05);
+  border-color: #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:active {
-  background-color: var(--tertiary-color);
   transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .submit-button {
-  width: 40%;
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
 }
 
 .submit-button:active {
-  color: var(--tertiary-color) !important;
+  background-color: #3e8e41;
 }
 
 .menu-button {
-  background-color: rgb(14, 66, 255);
-  margin: 0.5rem;
+  background-color: #008CBA; /* Blue */
+  color: white;
 }
 
 .menu-button:hover {
-  background-color: rgba(14, 102, 255, 0.552);
+  background-color: #007bb5;
 }
 
 .menu-button:active {
-  background-color: rgba(14, 255, 94, 0.544);
-  color: var(--tertiary-color);
+  background-color: #005f87;
 }
 
-.icon {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  border-radius: 5px;
+.project-button {
+  background-color: #f44336; /* Red */
+  color: white;
 }
 
-.icon:hover {
-  background-color: var(--button-hover-color);
-  border-radius: 5px;
-  transform: scale(1.1);
+.project-button:hover {
+  background-color: #da190b;
 }
 
-.icon:active {
-  background-color: #0055ff;
-  color: var(--text-color);
-  transform: scale(0.9);
+.project-button:active {
+  background-color: #a31508;
+}
+
+.icon-button {
+  background-color: #e7e7e7; /* Light Gray */
+  color: black;
+}
+
+.icon-button:hover {
+  background-color: #d6d6d6;
+}
+
+.icon-button:active {
+  background-color: #bcbcbc;
 }

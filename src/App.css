@@ -183,32 +183,6 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  padding: 10px; /* Reduced padding */
-  background-color: #0fc1ac;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  color: var(--text-color);
-}
-
-.project:hover {
-  background-color: #124047;
-  transform: scale(1.05);
-  color: var(--text-color);
-  border: 2px solid var(--text-color);
-}
-
-.project:active {
-  background-color: #183250;
-  color: yellowgreen;
-}
-
 .submit-button {
   background-color: var(--button-background-color);
   width: 40%;
