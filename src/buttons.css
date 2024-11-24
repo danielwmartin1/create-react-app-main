@@ -11,19 +11,19 @@ button {
   transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  background-color: #008CBA; /* Default Blue */
-  color: white;
+  background-color: #008CBA !important; /* Default Blue */
+  color: white !important;
 }
 
 button:hover {
   transform: scale(1.05);
-  border-color: #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #007bb5; /* Hover Blue */
+  background-color: #007bb5 !important; /* Hover Blue */
 }
 
-button:active {
+.submit-button:active, button:active {
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #005f87; /* Active Blue */
+  color: white !important;
+  background-color: #005f87 !important; /* Active Blue */
 }
+

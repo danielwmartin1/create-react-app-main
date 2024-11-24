@@ -12,7 +12,7 @@ const Projects = () => {
         <div className='container main' style={{ border: '3px solid aqua', paddingTop: '4rem', paddingBottom: '7rem'}}>
             <h1 style={{marginBottom: '3rem', color: 'var(--text-color)', fontSize: '1rem !important;'}} >Portfolio</h1>
             <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
-                Check out my GitHub Repositories Page
+                My GitHub Repositories
             </a>
             <div className='project-link'>
                 {projectLinks.map((project, index) => (

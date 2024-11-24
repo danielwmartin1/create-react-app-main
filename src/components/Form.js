@@ -114,9 +114,21 @@ function Form() {
     };
 
     const textareaStyle = {
-        ...inputStyle,
-        textAlign: 'center',
-    };
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        padding: '12px',
+        border: '1px solid #ccc',
+        borderRadius: '4px',
+        boxSizing: 'border-box',
+        marginTop: '6px',
+        marginBottom: '16px',
+        resize: 'vertical',
+        fontSize: '14px',
+        fontFamily: 'Arial, sans-serif',
+        color: 'black',
+        textAlign: 'center'};
 
     return (
         <div className="form-container">
@@ -172,20 +184,8 @@ function Form() {
                     <button
                         className="submit-button"
                         type="submit"
-                        style={{
-                            backgroundColor: '#4CAF50',
-                            width: '40%',
-                            textAlign: 'center',
-                            color: 'white',
-                            padding: '12px 20px',
-                            border: 'none',
-                            borderRadius: '5px',
-                            cursor: 'pointer',
-                            fontSize: '16px',
-                            margin: '0.5rem'
-                        }}
-                        onMouseOver={(e) => (e.target.style.backgroundColor = '#45a049')}
-                        onMouseOut={(e) => (e.target.style.backgroundColor = '#4CAF50')}
+
+                      
                     >
                         Send
                     </button>

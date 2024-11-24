@@ -13,13 +13,14 @@ const Contact = () => {
         <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '6.5rem' }}>
             <div className="container">
                 <section className="section">
+                    <h2 className='contact'>Contact Me:</h2>
                     <Link to="/form">
                         <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
                     </Link>
                 </section>
             </div>
             <div className="find">
-                <h2>Find me on:</h2>
+                <h2 className='contact'>Find me on:</h2>
                 <div className="social-icons" style={{ display: 'flex', justifyContent:'center', alignItems: 'center' }}>
                     <a className="icon" href="https://www.github.com/danielwmartin1" target="_blank" rel="noopener noreferrer">
                         <img className="logo" src={githubLogo} alt="GitHub Logo" />

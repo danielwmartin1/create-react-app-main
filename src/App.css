@@ -58,11 +58,18 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
   margin: auto;
   overflow: auto;
   flex: 1;
   color: var(--text-color);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
 
 .main {
@@ -174,6 +181,18 @@ img {
 
 img.logo {
   z-index: 1000 !important;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img.logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img.logo:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #profile {
