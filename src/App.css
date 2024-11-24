@@ -189,8 +189,8 @@ h2 {
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  padding: var(--padding);
-  background-color: #0fa9c1;
+  padding: 10px; /* Reduced padding */
+  background-color: #0fc1ac;
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -206,7 +206,7 @@ h2 {
 
 .project:active {
   background-color: #183250;
-  color: var(--text-color);
+  color: yellowgreen;
 }
 
 .submit-button {
