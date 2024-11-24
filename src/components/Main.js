@@ -7,17 +7,19 @@ import githubLogo from '../images/github.png';
 import gitLogo from '../images/git.png';
 import htmlLogo from '../images/HTML.png';
 import cssLogo from '../images/CSS.png';
-import bootstrapLogo from '../images/bootstrap.png';
 import jsLogo from '../images/JS.png';
+import bootstrapLogo from '../images/bootstrap.png';
 import reactLogo from '../images/React.png';
 import nodeLogo from '../images/node.png';
 import expressLogo from '../images/express.webp';
-import mongodbLogo from '../images/mongodb.png';
-import sqlLogo from '../images/SQL.png';
+import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '..//images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
+import mongodbLogo from '../images/mongodb.png';
+import sqlLogo from '../images/SQL.png';
+import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.png';
-import nextjsLogo from '../images/next-js.svg';
+
 
 
 const logos = [
@@ -27,16 +29,17 @@ const logos = [
   { src: gitLogo, name: 'Git' },
   { src: htmlLogo, name: 'HTML' },
   { src: cssLogo, name: 'CSS' },
-  { src: bootstrapLogo, name: 'Bootstrap' },
   { src: jsLogo, name: 'JavaScript' },
+  { src: bootstrapLogo, name: 'Bootstrap' },
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
   { src: expressLogo, name: 'Express' },
   { src: nextjsLogo, name: 'Next.JS' },
-  { src: mongodbLogo, name: 'MongoDB' },
-  { src: sqlLogo, name: 'SQL' },
   { src: pythonDjangoLogo, name: 'Python/Django' },
   { src: csharpLogo, name: 'C#' },
+  { src: mongodbLogo, name: 'MongoDB' },
+  { src: sqlLogo, name: 'SQL' },
+  { src: viteLogo, name: 'Vite.JS' },
   { src: vercelLogo, name: 'Vercel' },
 ];
 
