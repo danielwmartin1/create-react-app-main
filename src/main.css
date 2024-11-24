@@ -17,18 +17,23 @@
   width: 100%;
 }
 
-.main h1 {
-  font-size: var(--font-size-large);
-  color: var(--primary-color);
-}
 
 .main p {
-  line-height: 1.6;
+  line-height: 1.75;
   text-align: center;
+  color: var(--text-color);
+  font-family: 'Bebas Neue', cursive;
+  margin: 0 0.5rem;
+}
+
+#name {
+  font-size: var(--font-size-large);
   color: var(--text-color);
 }
 
-.project {    
-  color: var(--primary-color);
-  margin: 1rem;
+#experience, #tech {
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
 }
+
+

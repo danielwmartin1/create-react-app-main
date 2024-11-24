@@ -23,8 +23,8 @@ import vercelLogo from '../images/vercel.png';
 
 
 const logos = [
-  { src: visualStudioLogo, name: 'Visual Studio' },
-  { src: vscodeLogo, name: 'VS Code' },
+  { src: visualStudioLogo, name: 'VisualStudio' },
+  { src: vscodeLogo, name: 'VSCode' },
   { src: githubLogo, name: 'GitHub' },
   { src: gitLogo, name: 'Git' },
   { src: htmlLogo, name: 'HTML' },
@@ -35,11 +35,11 @@ const logos = [
   { src: nodeLogo, name: 'Node.js' },
   { src: expressLogo, name: 'Express' },
   { src: nextjsLogo, name: 'Next.JS' },
-  { src: pythonDjangoLogo, name: 'Python/Django' },
+  { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: csharpLogo, name: 'C#' },
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
-  { src: viteLogo, name: 'Vite.JS' },
+  { src: viteLogo, name: 'ViteJS' },
   { src: vercelLogo, name: 'Vercel' },
 ];
 
@@ -54,7 +54,7 @@ const Main = () => (
       <h2 id="tech">Technologies</h2>
       <div className="logos">
         {logos.map((logo, index) => (
-          <img key={index} className="logo" src={logo.src} alt={`${logo.name} Logo`} />
+          <img key={index} className="logo" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} />
         ))}
       </div>
     </div>
@@ -62,3 +62,4 @@ const Main = () => (
 );
 
 export default Main;
+

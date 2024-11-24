@@ -96,40 +96,11 @@ code {
 }
 
 
-
-/* Typography */
-h2 {
-  font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1rem;
-  color: var(--text-color);
-}
-
-.main h1 {
-  font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
-  font-size: var(--font-size-large);
+.project {    
   color: var(--primary-color);
+  margin: 1rem;
 }
 
-.main p {
-  line-height: 1.6;
-  text-align: center;
-  color: var(--text-color);
-  font-family: 'Bebas Neue', cursive;
-  margin: 0 0.5rem;
-}
-
-#name {
-  font-size: var(--font-size-large);
-  color: var(--text-color);
-}
-
-#tech {
-  text-align: center;
-  color: var(--text-color);
-  margin-bottom: 0;
-}
 
 .about_main {
   display: flex;

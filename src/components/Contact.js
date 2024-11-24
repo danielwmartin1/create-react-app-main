@@ -18,10 +18,6 @@ const Contact = () => {
                         <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
                     </Link>
                 </section>
-                <section className="section background">
-                    <h2>Background</h2>
-                    <p>I have been a registered nurse for about 15yrs in practice, but desired a change in the direction of software development. It has become a great passion of mine and would love to contribute future projects.</p>
-                </section>
             </div>
             <div className="find">
                 <h2>Find me on:</h2>
