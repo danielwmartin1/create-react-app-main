@@ -9,16 +9,16 @@ const Projects = () => {
     ];
 
     return (
-        <div className='container main' style={{ border: '3px solid aqua', marginTop: '2rem', paddingBottom: '7rem'}}>
+        <div className='container main' style={{ border: '3px solid aqua', paddingTop: '4rem', paddingBottom: '7rem'}}>
             <h1 style={{marginBottom: '3rem', color: 'var(--text-color)', fontSize: '1rem !important;'}} >Portfolio</h1>
-            <button style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
                 Check out my GitHub Repositories Page
-            </button>
+            </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {projectLinks.map((project, index) => (
-                    <button key={index} className='anchor project' onClick={() => window.open(project.href, "_blank", "noopener noreferrer")}>
+                    <a key={index} className='anchor project' href={project.href} target="_blank" rel="noopener noreferrer">
                         {project.text}
-                    </button>
+                    </a>
                 ))}
             </div>
         </div>

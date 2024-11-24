@@ -2,18 +2,15 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import "../script.js";
+import "../header.css";
 
 const NavBar = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 480);
-  }, []);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 480);
+      setIsMobile(window.innerWidth < 768);
     };
 
     window.addEventListener('resize', handleResize);
@@ -31,7 +28,7 @@ const NavBar = () => {
   return (
     <nav>
       {isMobile ? (
-        <div>
+        <div className="menu_container">
           <button onClick={toggleMenu} className="menu-button">
             Menu
           </button>

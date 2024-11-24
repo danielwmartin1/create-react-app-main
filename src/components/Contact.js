@@ -1,20 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../App.css';
 import githubLogo from '../images/github.png';
 import linkedinLogo from '../images/linkedin.png';
 import facebookLogo from '../images/facebook.png';
 import discordLogo from '../images/discord.png';
 import '../buttons.css'
+import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
     return (
-        <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+        <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '6.5rem' }}>
             <div className="container">
                 <section className="section">
                     <h2>Contact Info</h2>
-                    <Link id="anchor" to="/form">Send message</Link>
+                    <Link to="/form">
+                        <button className="anchor">Send Message</button>
+                    </Link>
                 </section>
                 <section className="section background">
                     <h2>Background</h2>

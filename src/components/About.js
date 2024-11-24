@@ -3,8 +3,8 @@ import '../App.css';
 
 const About = () => {
     return (
-        <div id="about_main" className="container about">
-            <div className="main container">
+        <div className="about_main container about">
+            <div className="about_main main container">
                 <section className="section">
                     <h2 className="center-text">Introduction</h2>
                     <p>Welcome to my personal project! Here you will find information about me and my interests. Thank you for visiting!</p>

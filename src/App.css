@@ -127,28 +127,7 @@ footer {
   z-index: 1000;
 }
 
-header {
-  background: var(--background-color);
-  color: var(--text-color);
-  padding: 10px;
-  border-bottom: 3px solid var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-header ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-header li {
-  padding: 5px 0;
-}
 
 /* Typography */
 h2 {
@@ -180,6 +159,14 @@ h2 {
   color: var(--text-color);
   margin-top: 1rem;
   margin-bottom: 0;
+}
+
+.about_main  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 2rem 2cqh 2.5rem;
 }
 
 /* Components */
@@ -223,18 +210,19 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  color: var(--text-color);
 }
 
 .project:hover {
-  background-color: var(--secondary-color);
+  background-color: #124047;
   transform: scale(1.05);
   color: var(--text-color);
   border: 2px solid var(--text-color);
 }
 
 .project:active {
-  background-color: var(--tertiary-color);
-  color: white;
+  background-color: #183250;
+  color: var(--text-color);
 }
 
 .submit-button {
@@ -257,6 +245,7 @@ h2 {
 .submit-button:active {
   color: var(--tertiary-color) !important;
 }
+
 
 /* Images */
 img {
@@ -352,15 +341,6 @@ img.logo {
 @media (max-width: 480px) {
   footer {
     padding: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  header ul {
-    flex-direction: column;
   }
 
   .main {

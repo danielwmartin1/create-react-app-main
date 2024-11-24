@@ -1,25 +1,109 @@
-@import './variables.css';
+@import './header.css';
+
+.menu_container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    flex: 1 1 auto;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    list-style-type: none;
+    background-color: var(--background-color);
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.nav-items a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.5rem 2.5rem;
+    font-size: clamp(1rem, 2vw, 2rem); /* Responsive font size */
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text inside the links */
+    font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.nav-items {
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-items a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.nav-items a:active {
+    color: yellowgreen;
+    transform: scale(0.95); /* Slightly shrink the link when active */
+}
 
 header {
-  background: var(--background-color);
-  color: var(--text-color);
-  padding: 10px;
-  margin: 0;
-  border-bottom: 3px solid var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the header content horizontally */
+    align-items: center; /* Center the header content vertically */
+    background-color: var(--background-color);
+    border-bottom: 3px solid var(--primary-color);
+    flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
 }
 
-header ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* When menu button is visible, set nav-items in column formation */
+header.menu-visible .nav-items {
+    flex-direction: column !important;
 }
 
-header li {
-  padding: 5px 0;
+header.menu-invisible .nav-items {
+    flex-direction: row !important;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .nav-items a {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center text inside the links */
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        padding: 0.5rem 2rem; /* Adjust padding for smaller screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .nav-items a {
+        padding: 0.5rem 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack header content vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-items a {
+        padding: 0.5rem 1rem; /* Further adjust padding for very small screens */
+    }
 }
