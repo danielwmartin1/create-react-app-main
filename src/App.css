@@ -89,15 +89,17 @@ code {
   width: 100%;
 }
 
-.app {
+.App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+
+
 /* Typography */
 h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
@@ -105,7 +107,7 @@ h2 {
 }
 
 .main h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
   font-size: var(--font-size-large);
   color: var(--primary-color);
 }
@@ -218,6 +220,7 @@ img.logo {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .logo {
