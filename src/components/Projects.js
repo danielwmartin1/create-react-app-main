@@ -14,7 +14,7 @@ const Projects = () => {
             <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
                 Check out my GitHub Repositories Page
             </a>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div className='project-link'>
                 {projectLinks.map((project, index) => (
                     <a key={index} className='anchor project' href={project.href} target="_blank" rel="noopener noreferrer">
                         {project.text}

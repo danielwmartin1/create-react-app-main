@@ -50,19 +50,6 @@ button:active {
   background-color: #005f87;
 }
 
-.project-button {
-  background-color: #f44336; /* Red */
-  color: white;
-}
-
-.project-button:hover {
-  background-color: #da190b;
-}
-
-.project-button:active {
-  background-color: #a31508;
-}
-
 .icon-button {
   background-color: #e7e7e7; /* Light Gray */
   color: black;
