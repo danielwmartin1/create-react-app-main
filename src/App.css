@@ -1,28 +1,12 @@
 /* Variables */
-@import url('./variables.css');
 @import url('./global.css');
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./buttons.css');
 @import url('./main.css');
-@import url('./media-queries.css');
+@import url('./index.css');
+@import url('./variables.css');
 
-:root {
-  --primary-color: #61dafb;
-  --secondary-color: #0fa9c1;
-  --tertiary-color: #124047;
-  --background-color: #183250;
-  --text-color: #ffffff;
-  --button-background-color: #214296;
-  --button-hover-color: #0fa9c1;
-  --button-active-color: #124047;
-  --font-family: 'Roboto', sans-serif;
-  --font-size-large: 2em;
-  --font-size-medium: 1.5em;
-  --font-size-small: 1em;
-  --padding: 20px;
-  --margin: 20px;
-}
 
 /* Reset and Global Styles */
 * {
@@ -166,7 +150,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 2rem 2cqh 2.5rem;
+  padding: 0 2rem 2.5rem 2.5rem;
 }
 
 /* Components */
@@ -244,6 +228,7 @@ h2 {
 
 .submit-button:active {
   color: var(--tertiary-color) !important;
+  background-color: var(--button-active-color);
 }
 
 

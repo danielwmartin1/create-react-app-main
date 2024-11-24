@@ -1,4 +1,4 @@
-@import './buttons.css';
+@import url('./variables.css');
 
 button {
   background-color: var(--button-background-color);
@@ -33,6 +33,7 @@ button:active {
 
 .menu-button {
   background-color: rgb(14, 66, 255);
+  margin: 0.5rem;
 }
 
 .menu-button:hover {

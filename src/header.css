@@ -1,4 +1,6 @@
-@import './header.css';
+@import url('./header.css');
+@import url('./variables.css');
+
 
 .menu_container {
     display: flex;
@@ -93,11 +95,9 @@ header.menu-invisible .nav-items {
         flex-direction: column; /* Stack items vertically on smaller screens */
     }
 
-    .nav-items a {
-        padding: 0.5rem 1.5rem; /* Adjust padding for smaller screens */
-    }
 
     header {
+        padding: 0.5rem;
         flex-direction: column; /* Stack header content vertically on smaller screens */
     }
 }
