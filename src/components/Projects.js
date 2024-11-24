@@ -3,9 +3,9 @@ import "../App.css";
 
 const Projects = () => {
     const projectLinks = [
-        { href: "https://tic-tac-toe-kohl-iota.vercel.app/", text: "Project 1" },
-        { href: "https://todolist-frontend-tau.vercel.app/", text: "Project 2" },
-        { href: "https://weather-app-danielwmartin1s-projects.vercel.app/", text: "Project 3" }
+        { href: "https://tic-tac-toe-kohl-iota.vercel.app/", text: "Tic-Tac-Toe" },
+        { href: "https://todolist-frontend-tau.vercel.app/", text: "To-Do List" },
+        { href: "https://weather-app-danielwmartin1s-projects.vercel.app/", text: "Weather App" }
     ];
 
     return (
