@@ -81,10 +81,6 @@ header.menu-invisible .nav-items {
 @media (max-width: 1024px) {
     .nav-items a {
         display: flex;
-        justify-content: center;
-        align-items: center; /* Center text inside the links */
-        font-size: 1.25rem; /* Adjust font size for smaller screens */
-        padding: 0.5rem 2rem; /* Adjust padding for smaller screens */
     }
 }
 
@@ -95,15 +91,13 @@ header.menu-invisible .nav-items {
         flex-direction: column; /* Stack items vertically on smaller screens */
     }
 
+    .menu_container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
 
     header {
-        padding: 0.5rem;
         flex-direction: column; /* Stack header content vertically on smaller screens */
     }
 }
 
-@media (max-width: 480px) {
-    .nav-items a {
-        padding: 0.5rem 1rem; /* Further adjust padding for very small screens */
-    }
-}

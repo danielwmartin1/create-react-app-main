@@ -33,7 +33,6 @@ body {
 a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 0.875rem; /* 14px */
   font-weight: bold;
 }
 
@@ -233,13 +232,6 @@ img.logo {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-  .main h1 {
-    font-size: 1.125rem; /* 18px */
-  }
-
-  .main p {
-    font-size: 0.875rem; /* 14px */
-  }
 
   #name {
     font-size: 1.125rem; /* 18px */
@@ -259,17 +251,7 @@ img.logo {
 }
 
 @media (max-width: 768px) {
-  footer {
-    padding: 10px;
-  }
 
-  .main h1 {
-    font-size: 0.9375rem; /* 15px */
-  }
-
-  .main p {
-    font-size: 0.75rem; /* 12px */
-  }
 
   #name {
     font-size: 0.9375rem; /* 15px */
@@ -289,20 +271,11 @@ img.logo {
 }
 
 @media (max-width: 480px) {
-  footer {
-    padding: 10px;
-  }
 
-  .main {
-    padding: 20px;
-  }
 
-  .main h1 {
-    font-size: 0.75rem; /* 12px */
-  }
 
   .main p {
-    font-size: 0.5625rem; /* 9px */
+    font-size: 0.7em; /* 9px */
   }
 
   #profile {
