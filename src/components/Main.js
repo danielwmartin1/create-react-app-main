@@ -24,8 +24,6 @@ import sqlLogo from '../images/SQL.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.png';
 
-
-
 const logos = [
   { src: visualStudioLogo, name: 'VisualStudio' },
   { src: vscodeLogo, name: 'VSCode' },
