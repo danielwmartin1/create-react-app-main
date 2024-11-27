@@ -58,6 +58,7 @@ code {
   align-items: center;
   margin: auto;
   overflow: auto;
+  flex: 1;
   color: var(--text-color);
 }
 
@@ -235,10 +236,19 @@ img.logo {
 
 
 
-
+  .main p {
+    font-size: 0.7em; /* 9px */
+  }
 
   #profile {
     width: 80px;
   }
 
+  .logo-container {
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 30px;
+  }
 }
