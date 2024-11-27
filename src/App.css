@@ -51,16 +51,6 @@ code {
 }
 
 /* Layout and Containers */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  overflow: auto;
-  flex: 1;
-  color: var(--text-color);
-}
 
 .contact {
   display: flex;

@@ -16,26 +16,14 @@
   box-sizing: border-box;
 }
 
-.container.main {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
   overflow: auto;
+  flex: 1;
   color: var(--text-color);
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color);
-  background-position: center;
-  height: 100vh;
-  background-color: transparent;
-  width: 100%;
 }
 
 p.p {
@@ -45,6 +33,7 @@ p.p {
   color: var(--text-color);
   margin: var(--margin-small);
   font-family: var(--font-family);
+  font-size: var(--font-size-small);
 }
 
 #name {
@@ -63,12 +52,6 @@ p.p {
 }
 
 #contact {
-  font-size: var(--font-size-small);
-  color: var(--text-color);
-  margin: var(--margin-small);
-}
-
-p.p {
   font-size: var(--font-size-small);
   color: var(--text-color);
   margin: var(--margin-small);
