@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 
-.menu_container {
+.menu-container {
     display: flex;
     flex-direction: column !important;
     justify-content: center;
@@ -79,23 +79,14 @@ header {
     background-color: var(--background-color);
     border-bottom: 3px solid var(--primary-color);
     flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
-    padding: 1rem;
+    padding: 0;
 }
 
-/* When menu button is visible, set nav-items in column formation */
-header.menu-visible .nav-items {
-    flex-direction: column !important;
-}
 
-header.menu-invisible .nav-items {
-    flex-direction: row !important;
-}
 
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
     .nav-items a {
-        display: flex;
-        justify-content: center;
         margin: 0rem;
     }
 }
@@ -109,7 +100,7 @@ header.menu-invisible .nav-items {
         padding: 0;
     }
 
-    .menu_container {
+    .menu-container {
         display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */
     }

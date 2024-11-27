@@ -27,7 +27,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.menu_container') && !event.target.closest('.menu-button')) {
+      if (isOpen && !event.target.closest('.menu-container') && !event.target.closest('.menu-button')) {
         setIsOpen(false);
       }
     };
@@ -39,7 +39,7 @@ const NavBar = () => {
   return (
     <nav>
       {isMobile ? (
-        <div className="menu_container">
+        <div className="menu-container">
           <button onClick={toggleMenu} className="menu-button">
             Menu
           </button>
