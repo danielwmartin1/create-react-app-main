@@ -80,7 +80,7 @@ p.p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: auto 0;
+  margin-top: 0 auto;
 }
 
 .logos {
