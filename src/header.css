@@ -1,6 +1,17 @@
 @import url('./header.css');
 @import url('./variables.css');
 
+.listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    list-style-type: none;
+    background-color: var(--background-color);
+    flex-wrap: wrap;
+}
 
 .menu_container {
     display: flex;
@@ -46,6 +57,8 @@
 .nav-items {
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
+    padding: 0;
+    margin: 0;
 }
 
 .nav-items a:hover {
@@ -66,6 +79,7 @@ header {
     background-color: var(--background-color);
     border-bottom: 3px solid var(--primary-color);
     flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
+    padding: 1rem;
 }
 
 /* When menu button is visible, set nav-items in column formation */
@@ -82,8 +96,7 @@ header.menu-invisible .nav-items {
     .nav-items a {
         display: flex;
         justify-content: center;
-        padding: 0;
-        margin: 0.5rem;
+        margin: 0rem;
     }
 }
 
@@ -92,8 +105,8 @@ header.menu-invisible .nav-items {
     .nav-items {
         display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */
-        margin: 0.3rem;
-        padding: 0.3rem;
+        margin: 0;
+        padding: 0;
     }
 
     .menu_container {
