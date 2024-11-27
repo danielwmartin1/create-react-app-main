@@ -47,7 +47,7 @@ const logos = [
 ];
 
 const Main = () => (
-  <div className="container main">
+  <div className="container">
     <div className="container">
       <img id="profile" src={profileImg} alt="Profile" />
       <h1 id="name" className='headings'>Daniel Martin</h1>

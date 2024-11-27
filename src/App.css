@@ -43,6 +43,7 @@ a:active {
   color: yellowgreen;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   color: var(--text-color);
@@ -67,6 +68,13 @@ code {
   justify-content: center;
   align-items: center;
   margin: 1rem;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .project {    
@@ -149,7 +157,7 @@ code {
 }
 
 .submit-button:active {
-  color: var(--tertiary-color) !important;
+  color: var(--tertiary-color);
   background-color: var(--button-active-color);
 }
 
@@ -160,9 +168,12 @@ img {
 }
 
 img.logo {
+  z-index: 1000;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 
 #profile {
   margin-bottom: var(--margin);
@@ -170,8 +181,10 @@ img.logo {
   width: 150px;
 }
 
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
+
   #name {
     font-size: 1.125rem; /* 18px */
   }
@@ -190,6 +203,8 @@ img.logo {
 }
 
 @media (max-width: 768px) {
+
+
   #name {
     font-size: 0.9375rem; /* 15px */
   }
@@ -208,6 +223,9 @@ img.logo {
 }
 
 @media (max-width: 480px) {
+
+
+
   .main p {
     font-size: 0.7em; /* 9px */
   }
