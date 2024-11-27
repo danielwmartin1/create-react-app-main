@@ -58,12 +58,11 @@
 #name {
   font-size: var(--font-size-large);
   color: var(--text-color);
-  margin: var(--margin-medium);
 }
 
 #name, #experience, #tech {
   font-family: var(--font-family);
-  margin: var(--margin-medium);
+  margin-top: 0.5rem;
 }
 
 #experience, #tech {
