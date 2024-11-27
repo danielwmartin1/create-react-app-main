@@ -58,7 +58,6 @@ code {
   align-items: center;
   margin: auto;
   overflow: auto;
-  flex: 1;
   color: var(--text-color);
 }
 
@@ -191,43 +190,6 @@ img.logo {
   width: 150px;
 }
 
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logos {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.logo {
-  max-width: 100%;
-  height: auto;
-  margin: 0.5rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.small-logo {
-  width: 50px;
-}
-
-.small-logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.small-logo:active {
-  transform: scale(0.9);
-}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
@@ -273,19 +235,10 @@ img.logo {
 
 
 
-  .main p {
-    font-size: 0.7em; /* 9px */
-  }
+
 
   #profile {
     width: 80px;
   }
 
-  .logo-container {
-    gap: 0.5rem;
-  }
-
-  .logo {
-    width: 30px;
-  }
 }
