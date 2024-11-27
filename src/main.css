@@ -140,7 +140,7 @@ p.p {
   }
 
   p.p {
-    font-size: calc(var(--font-size-small) - 0.1rem);
+    font-size: calc(var(--font-size-small) - 0.125rem);
   }
 
   .logo {
