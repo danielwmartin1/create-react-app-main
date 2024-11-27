@@ -143,10 +143,6 @@ p.p {
     font-size: calc(var(--font-size-small) - 0.1rem);
   }
 
-  .logo-container {
-    margin-top: 0!important;
-  }
-
   .logo {
     margin: 0.375rem;
   }
