@@ -19,7 +19,7 @@ import expressLogo from '../images/express.webp';
 import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '..//images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
-import mongodbLogo from '../images/mongodb.png';
+import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.png';
