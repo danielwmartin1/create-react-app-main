@@ -125,9 +125,7 @@ p.p {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .main {
-    padding: var(--padding-small);
-  }
+
 
   #name {
     font-size: calc(var(--font-size-large) - 0.25rem);
@@ -146,8 +144,7 @@ p.p {
   }
 
   .logo-container {
-    flex-direction: column;
-    gap: 0.25rem;
+    margin-top: 0!important;
   }
 
   .logo {
