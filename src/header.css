@@ -83,6 +83,14 @@ header {
 }
 
 
+footer {
+    margin-top: auto;
+    background-color: var(--background-color);
+    border-top: 3px solid var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
