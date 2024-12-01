@@ -40,7 +40,7 @@ function Form() {
             // Display a pop-up message
             const popup = document.createElement('div');
             popup.style.position = 'fixed';
-            popup.style.backgroundColor = 'rgba(0, 255, 0, 0.7)';
+            popup.style.backgroundColor = 'rgba(0, 255, 0, 0.5)';
             popup.style.top = '50%';
             popup.style.left = '50%';
             popup.style.transform = 'translate(-50%, -50%)';
@@ -70,7 +70,7 @@ function Form() {
             popup.style.top = '50%';
             popup.style.left = '50%';
             popup.style.transform = 'translate(-50%, -50%)';
-            popup.style.backgroundColor = 'rgba(255, 0, 0, 0.7)';
+            popup.style.backgroundColor = 'rgba(255, 0, 0, 0.5)';
             popup.style.color = 'white';
             popup.style.padding = '30px'; // Increased padding for larger size
             popup.style.borderRadius = '6px';
