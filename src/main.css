@@ -103,10 +103,6 @@ p.p {
 
 @media (max-width: 1024px) {
 
-  #name {
-    font-size: 1.125rem; /* 18px */
-  }
-
   #profile {
     width: 130px;
   }
