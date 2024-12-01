@@ -106,6 +106,26 @@ p.p {
 }
 
 /* Responsive adjustments */
+
+@media (max-width: 1024px) {
+
+  #name {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  #profile {
+    width: 130px;
+  }
+
+  .logo-container {
+    gap: 1.5rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   #name {
     font-size: calc(var(--font-size-large) - 0.25rem);
@@ -130,4 +150,27 @@ p.p {
   .small-logo {
     width: 40px;
   }
+  #profile {
+    width: 100px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  .main p {
+    font-size: 0.7em; /* 9px */
+  }
+
+  #profile {
+    width: 80px;
+  }
+  .logo {
+    width: 30px;
+  }
+
 }
