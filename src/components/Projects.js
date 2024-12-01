@@ -9,7 +9,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className='container main' style={{ border: '3px solid aqua', paddingTop: '4rem', paddingBottom: '7rem'}}>
+        <div className='container main' style={{ paddingTop: '4rem', paddingBottom: '7rem'}}>
             <h1 style={{marginBottom: '3rem', color: 'var(--text-color)', fontSize: '1rem !important;'}} >Portfolio</h1>
             <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
                 My GitHub Repositories
