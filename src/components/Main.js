@@ -49,7 +49,7 @@ const Main = () => (
     <div className="container">
       <img id="profile" src={profileImg} alt="Profile" />
       <h1 id="name" className='headings'>Daniel Martin</h1>
-      <p className="p">Hello! I'm Daniel, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and enjoy learning new technologies. In my free time, I like to work on personal projects and contribute to open-source communities.</p>
+      <p className="p">Hello! I'm Daniel, a passionate web developer with experience in creating dynamic and responsive web apps. I love coding and enjoy learning new technologies. In my free time, I like to work on personal projects and contribute to open-source communities.</p>
     </div>
     <div className="container">
       <h2 id="experience" className='headings'>Experience</h2>
