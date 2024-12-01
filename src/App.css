@@ -67,10 +67,20 @@ code {
   min-height: 100vh;
 }
 
+.project-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1rem; /* 16px */
+}
+
 .project {    
   color: var(--primary-color);
   margin: 1rem;
   font-size: 1rem; /* 16px */
+
 }
 
 .section {
@@ -99,6 +109,33 @@ code {
 }
 
 /* Components */
+
+.divProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1rem; /* 16px */
+  background-color: var(--background-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem;
+  width: 40%;
+}
+
+ #anchor {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem; /* 16px */
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  border: 3px solid var(--primary-color);
+}
+
 .about-me-email,
 .anchor,
 #anchor {
@@ -106,6 +143,7 @@ code {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
+  text-align: center;
 }
 
 .about-me-email:hover,

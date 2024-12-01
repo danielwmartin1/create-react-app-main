@@ -9,17 +9,21 @@ const Projects = () => {
     ];
 
     return (
-        <div className='container main' style={{ paddingTop: '4rem', paddingBottom: '7rem'}}>
-            <h1 style={{marginBottom: '3rem', color: 'var(--text-color)', fontSize: '1rem !important;'}} >Portfolio</h1>
-            <a style={{margin: '2rem'}} className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
-                My GitHub Repositories
-            </a>
-            <div className='project-link'>
-                {projectLinks.map((project, index) => (
-                    <a key={index} className='anchor project' href={project.href} target="_blank" rel="noopener noreferrer">
-                        {project.text}
-                    </a>
-                ))}
+        <div className='container main project-div'>
+            <h1>Portfolio</h1>
+            <div className="project-link anchor project divProject">
+                <a className='anchor project' href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    My GitHub Repositories
+                </a>
+                <div className='project-link'>
+                    {projectLinks.map((project, index) => (
+                        <div>
+                            <a key={index} className='anchor project' href={project.href} target="_blank" rel="noopener noreferrer">
+                                {project.text}
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )
