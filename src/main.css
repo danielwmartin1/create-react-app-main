@@ -58,17 +58,8 @@ p.p {
   margin: var(--margin-small);
 }
 
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: var(--margin-small);
-  padding: var(--padding-small);
-}
-
 .logos {
+  background-color: rgb(46, 130, 194);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -76,6 +67,7 @@ p.p {
   justify-content: center;
   align-items: center;
   margin: 0.5rem 3rem;
+  border-radius: 5px;
 }
 
 .logo {
