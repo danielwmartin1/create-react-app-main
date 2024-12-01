@@ -7,7 +7,7 @@ footer.footer {
   background-color: var(--background-color);
   color: var(--text-color);
   text-align: center;
-  border-top: 3px solid var(--primary-color);
+  border-top: 5px ridge var(--primary-color);
   bottom: 0;
   padding: 1rem;
 }

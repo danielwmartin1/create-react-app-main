@@ -77,7 +77,7 @@ header {
     justify-content: center; /* Center the header content horizontally */
     align-items: center; /* Center the header content vertically */
     background-color: var(--background-color);
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 5px ridge var(--primary-color);
     flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
     padding: 0;
 }
