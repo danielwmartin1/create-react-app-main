@@ -60,7 +60,7 @@ p.p {
 
 .logos {
   background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
