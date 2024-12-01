@@ -28,8 +28,7 @@ button:hover {
   background-color: var(--button-background-color);
   border: none;
   color: var(--text-color);
-  padding: 12px 20px;
-  width: 40%;
+  width: 15%;
 }
 
 .submit-button:hover {
