@@ -27,35 +27,17 @@
   margin: var(--margin-small) 0; /* Adjust this value as needed */
 }
 
-p.p {
-  padding: var(--padding-small);
-  line-height: 1.6;
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem;
   text-align: center;
-  color: var(--text-color);
-  margin: 0 5rem;
-  font-family: var(--font-family);
-  font-size: var(--font-size-small);
+  justify-content: center;
+  align-items: center;
 }
 
-#name {
-  font-size: var(--font-size-large);
-  color: var(--text-color);
-}
-
-#name, #experience, #tech {
-  font-family: var(--font-family);
-  margin-top: 0.5rem;
-}
-
-#experience, #tech {
-  font-size: var(--font-size-medium);
-  color: var(--text-color);
-}
-
-#contact {
-  font-size: var(--font-size-small);
-  color: var(--text-color);
-  margin: var(--margin-small);
+.logo-container {
+  gap: 1.5rem;
 }
 
 .logos {
@@ -72,13 +54,43 @@ p.p {
   border-radius: 5px;
 }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-  margin: 0.75rem;
+.main p {
+  font-size: 0.7em; /* 9px */
+}
+
+p.p {
+  padding: var(--padding-small);
+  line-height: 1.6;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  color: var(--text-color);
+  margin: 0 5rem;
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+}
+
+#contact {
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+  margin: var(--margin-small);
+}
+
+#experience, #tech {
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+}
+
+#name {
+  font-size: var(--font-size-large);
+  color: var(--text-color);
+}
+
+#name, #experience, #tech {
+  font-family: var(--font-family);
+  margin-top: 0.5rem;
+}
+
+#profile {
+  width: 130px;
 }
 
 .small-logo {
@@ -102,7 +114,6 @@ p.p {
 /* Responsive adjustments */
 
 @media (max-width: 1024px) {
-
   #profile {
     width: 130px;
   }
@@ -148,7 +159,6 @@ p.p {
 }
 
 @media (max-width: 480px) {
-
   .main p {
     font-size: 0.7em; /* 9px */
   }

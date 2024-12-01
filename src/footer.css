@@ -1,15 +1,14 @@
 @import './variables.css';
 
 footer.footer {
-  position: relative; /* or static */
-  bottom: auto;
-  width: 100%;
   background-color: var(--background-color);
-  color: var(--text-color);
-  text-align: center;
   border-top: 5px ridge var(--primary-color);
   bottom: 0;
+  color: var(--text-color);
   padding: 1rem;
+  position: relative; /* or static */
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
