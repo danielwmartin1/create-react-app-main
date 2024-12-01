@@ -59,7 +59,8 @@ p.p {
 }
 
 .logos {
-  background-color: rgb(46, 130, 194);
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -67,6 +68,7 @@ p.p {
   justify-content: center;
   align-items: center;
   margin: 0.5rem 3rem;
+  padding: 0.5rem;
   border-radius: 5px;
 }
 
