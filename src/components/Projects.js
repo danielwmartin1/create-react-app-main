@@ -4,13 +4,13 @@ import "../App.css";
 const Projects = () => {
     const projectLinks = [
         { href: "https://danielwmartin1.github.io/first-website/", text: "My First Website" },
-        { href: "https://tic-tac-toe-kohl-iota.vercel.app/", text: "Tic-Tac-Toe" },
-        { href: "https://weather-app-danielwmartin1s-projects.vercel.app/", text: "Weather App" },
+        { href: "https://danielwmartin1.github.io/Tic-Tac-Toe/", text: "Tic-Tac-Toe" },
+        { href: "https://danielwmartin1.github.io/weather-app/", text: "Weather App" },
         { href: "https://todolist-frontend-tau.vercel.app/", text: "To-Do List" }
     ];
 
     return (
-        <div className='container main project-div'>
+        <div className='container main project-div'>/
             <h1>Portfolio</h1>
             <div className="project-link anchor project divProject">
                 <a className='anchor project' style={{textDecoration: 'underline', paddingBottom: '1rem'}} href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
