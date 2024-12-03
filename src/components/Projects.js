@@ -6,6 +6,7 @@ const Projects = () => {
         { href: "https://danielwmartin1.github.io/first-website/", text: "My First Website" },
         { href: "https://danielwmartin1.github.io/Tic-Tac-Toe/", text: "Tic-Tac-Toe" },
         { href: "https://simon-says-zeta-opal.vercel.app/", text: "Simon Says" },
+        { href: "https://fake-store-2nxxlqm6m-danielwmartin1s-projects.vercel.app/", text: "Fake Store" },
         { href: "https://danielwmartin1.github.io/weather-app/", text: "Weather App" },
         { href: "https://todolist-frontend-tau.vercel.app/", text: "To-Do List" }
     ];
