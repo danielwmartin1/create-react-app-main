@@ -47,19 +47,19 @@ const logos = [
 const Main = () => (
   <div className="container">
     <div className="container">
-      <img id="profile" src={profileImg} alt="Profile" />
+      <img id="profile" src={profileImg} alt="Profile Pic" title="Profile" />
       <h1 id="name" className='headings'>Daniel Martin</h1>
       <p className="p">Hello! I'm Daniel, a passionate web developer with experience in creating dynamic and responsive web apps. I love coding and enjoy learning new technologies. In my free time, I like to work on personal projects and contribute to open-source communities.</p>
     </div>
     <div className="container">
       <h2 id="experience" className='headings'>Experience</h2>
       <p className="p">With hands-on experience in web development, I have honed my skills in HTML, CSS, JavaScript, and various modern frameworks like React. My journey has been enriched by working on diverse projects that range from small business websites to large-scale web applications. This practical experience has provided me with a deep understanding of web technologies.</p>
-      </div>
+    </div>
     <div className="container">
       <h2 id="tech" className='headings'>Technologies</h2>
       <div className="logos">
         {logos.map((logo, index) => (
-          <img key={index} className="logo" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} />
+          <img key={index} className="logo" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.name} Logo`} />
         ))}
       </div>
     </div>
