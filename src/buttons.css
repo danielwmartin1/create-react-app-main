@@ -16,6 +16,7 @@ button, .submit-button {
 button {
   background-color: #008CBA !important; /* Default Blue */
   color: white !important;
+  width: auto;
 }
 
 button:hover {
@@ -28,7 +29,7 @@ button:hover {
   background-color: var(--button-background-color);
   border: none;
   color: var(--text-color);
-  width: 15%;
+  width: auto;
 }
 
 .submit-button:hover {
@@ -66,5 +67,19 @@ button:hover {
   button, .submit-button {
     font-size: 12px;
     padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  button, .submit-button {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 352px) {
+  button, .submit-button {
+    font-size: 10px;
+    padding: 3px 6px;
   }
 }

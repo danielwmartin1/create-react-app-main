@@ -94,7 +94,14 @@ code {
   margin: 1rem;
 }
 
-
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+  width: 100%;
+}
 
 img {
   width: 60px;
@@ -126,6 +133,13 @@ img.logo {
 
 p.p {
   width: 80%;
+  font-size: 1rem; /* 16px */
+}
+
+.project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
 }
 
