@@ -94,20 +94,7 @@ code {
   margin: 1rem;
 }
 
-.divProject {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  font-size: 1rem; /* 16px */
-  background-color: var(--background-color);
-  border: 3px solid var(--primary-color);
-  border-radius: 5px;
-  padding: 2rem;
-  margin: 2rem;
-  width: 40%;
-}
+
 
 img {
   width: 60px;
@@ -142,20 +129,19 @@ p.p {
   font-size: 1rem; /* 16px */
 }
 
-.project {
-  color: var(--primary-color);
-  margin: 1rem;
-  font-size: 1rem; /* 16px */
-}
-
-.project-div {
+.divProject {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 0 0 5rem 0;
+  padding: 2rem;
   font-size: 1rem; /* 16px */
+  background-color: var(--background-color);
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
 }
+
 
 .section {
   display: flex;
