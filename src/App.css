@@ -36,6 +36,8 @@ a:hover {
   transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
   text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .about-me-email:hover,
@@ -165,16 +167,14 @@ p.p {
   font-size: 1rem; /* 16px */
 }
 
-.project-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 1rem; /* 16px */
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px
 }
 
-.project-link:hover {
-  color: var(--secondary-color);
-}
 
 .divProject {
   display: flex;
@@ -182,7 +182,7 @@ p.p {
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
-  padding: 2rem;
+  padding: 3rem;
   font-size: 1rem; /* 16px */
   background-color: var(--background-color);
   border-radius: 5px;
