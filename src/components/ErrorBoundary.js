@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class ErrorBoundary extends Component {
   state = { hasError: false, error: null, errorInfo: null };
