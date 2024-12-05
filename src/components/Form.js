@@ -87,7 +87,7 @@ function Form() {
         flexDirection: 'column',
         fontWeight: 'bold',
         fontSize: '1.2rem',
-        color: 'black',
+        color: 'white',
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
@@ -145,10 +145,11 @@ function Form() {
                     alignItems: 'center',
                     fontFamily: 'Arial, sans-serif',
                     width: '60%',
-                    backgroundColor: '#fff',
+                    backgroundColor: 'var(--background-color)',
                     padding: '2rem',
                     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-                    borderRadius: '5px'
+                    borderRadius: '5px',
+                    border: '2px solid var(--primary-color)',
                 }}
             >
                 <label style={labelStyle}>
