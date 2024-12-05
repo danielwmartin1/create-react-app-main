@@ -11,8 +11,11 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
     return (
         <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '6.5rem' }}>
-            <div className="container">
-                <section className="section">
+            <div className="container contact-container">
+                <div>
+                    <p className="contact">Thank you for visiting my portfolio! I hope you enjoyed it. If you have any questions or would like to contact me, please feel free to do so. I look forward to hearing from you!</p>
+                </div>
+                <section className="section" style={{marginTop: "4rem"}}>
                     <h2 className='contact'>Contact Me:</h2>
                     <Link to="/form">
                         <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
