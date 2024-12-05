@@ -18,6 +18,7 @@ const About = () => {
                     <ul className="indented-list">
                         <li>Coding</li>
                         <li>Tennis</li>
+                        <li>Gaming</li>
                         <li>Gardening/Landscaping</li>
                         <li>Learning new technologies</li>
                     </ul>
