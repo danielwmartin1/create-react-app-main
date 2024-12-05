@@ -88,7 +88,12 @@ a:hover {
   padding: 3rem 6rem;
   border-radius: 5px;
   background-color: var(--secondary-color);
-  background-color: rgba(0, 187, 255, 0.5); /* Replace with actual rgba value */
+  background-color: rgb(0, 145, 198); /* Replace with actual rgba value */
+}
+
+.section p {
+  margin: 1rem;
+  font-size: 1.5rem; /* 24px */
 }
 
 .about_main div {
@@ -97,7 +102,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 4rem;
-  background-color: rgb(0, 106, 255);
+  background-color: rgb(0, 145, 198);
   border-radius: 5px;
   border: 2px solid var(--primary-color);
   padding: 1rem;
@@ -106,8 +111,9 @@ a:hover {
 .center-text {
   text-align: center;
   margin: 1rem;
-  font-size: 1.5rem; /* 16px */
+  font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
+  text-decoration: underline;
 }
 
 .portfolio {
