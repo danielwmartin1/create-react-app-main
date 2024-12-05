@@ -15,7 +15,7 @@ const Contact = () => {
                 <div>
                     <p className="contact">Thank you for visiting my portfolio! I hope you enjoyed it. If you have any questions or would like to contact me, please feel free to do so. I look forward to hearing from you!</p>
                 </div>
-                <section className="section" style={{marginTop: "4rem"}}>
+                <section className="section">
                     <h2 className='contact'>Contact Me:</h2>
                     <Link to="/form">
                         <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
