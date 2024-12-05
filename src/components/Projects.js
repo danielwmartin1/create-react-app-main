@@ -7,7 +7,7 @@ const Projects = () => {
         { href: "https://danielwmartin1.github.io/Tic-Tac-Toe/", text: "Tic-Tac-Toe" },
         { href: "https://simon-says-zeta-opal.vercel.app/", text: "Simon Says" },
         { href: "https://fake-store-sooty-nine.vercel.app/", text: "Fake Store" },
-        { href: "https://danielwmartin1.github.io/weather-app/", text: "Weather App" },
+        { href: "https://weather-app-three-opal-72.vercel.app", text: "Weather App" },
         { href: "https://todolist-frontend-tau.vercel.app/", text: "To-Do List" }
     ];
 
