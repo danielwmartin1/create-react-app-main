@@ -85,12 +85,13 @@ function Form() {
     const labelStyle = {
         display: 'flex',
         flexDirection: 'column',
-        margin: '10px',
         fontWeight: 'bold',
+        fontSize: '1.2rem',
         color: 'black',
         justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        width: '60%',
     };
 
     const inputStyle = {
@@ -99,8 +100,8 @@ function Form() {
         alignItems: 'center',
         width: '100%',
         padding: '12px',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
+        border: '2px solid #ccc',
+        borderRadius: '5px',
         boxSizing: 'border-box',
         marginTop: '6px',
         marginBottom: '16px',
@@ -117,9 +118,8 @@ function Form() {
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
-        padding: '12px',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
+        border: '2px solid #ccc',
+        borderRadius: '5px',
         boxSizing: 'border-box',
         marginTop: '6px',
         marginBottom: '16px',
@@ -127,7 +127,9 @@ function Form() {
         fontSize: '14px',
         fontFamily: 'Arial, sans-serif',
         color: 'black',
-        textAlign: 'center'};
+        textAlign: 'center',
+        paddingTop: '1rem',
+    };
 
     return (
         <div className="form-container">
@@ -142,12 +144,11 @@ function Form() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     fontFamily: 'Arial, sans-serif',
-                    margin: '1.5rem',
-                    width: 'auto',
+                    width: '60%',
                     backgroundColor: '#fff',
-                    padding: '20px',
+                    padding: '2rem',
                     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-                    borderRadius: '8px'
+                    borderRadius: '5px'
                 }}
             >
                 <label style={labelStyle}>

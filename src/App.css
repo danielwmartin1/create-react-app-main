@@ -95,6 +95,15 @@ code {
   margin: 1rem;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 80%;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -183,7 +192,6 @@ body html {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .about_main, .form-container, .divProject, .section {
-    padding: 1rem;
     font-size: 0.875rem; /* 14px */
   }
 
