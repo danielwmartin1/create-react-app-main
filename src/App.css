@@ -95,12 +95,13 @@ code {
   font-size: 0.875rem; /* 14px */
 }
 
-.contact {
+p.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: var(--font-family);
+  margin-bottom: 3rem;
 }
 
 .contact-container {
