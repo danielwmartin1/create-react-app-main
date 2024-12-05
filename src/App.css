@@ -171,12 +171,16 @@ p.p {
   font-size: 1rem; /* 16px */
 }
 
+.project-link:hover {
+  color: var(--secondary-color);
+}
+
 .divProject {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 5rem 0;
+  margin-bottom: 5rem;
   padding: 2rem;
   font-size: 1rem; /* 16px */
   background-color: var(--background-color);
