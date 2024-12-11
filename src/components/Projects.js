@@ -8,7 +8,7 @@ const Projects = () => {
         { href: "https://simon-says-zeta-opal.vercel.app/", text: "Simon Says" },
         { href: "https://fake-store-sooty-nine.vercel.app/", text: "Fake Store" },
         { href: "https://weather-app-three-opal-72.vercel.app", text: "Weather App" },
-        { href: "https://todolist-frontend-tau.vercel.app/", text: "To-Do List" }
+        { href: "https://client-todo-coral.vercel.app/", text: "To-Do List" }
     ];
 
     return (
