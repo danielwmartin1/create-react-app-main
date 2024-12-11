@@ -176,11 +176,6 @@ img {
   margin: var(--margin);
 }
 
-img.logo {
-  z-index: 1000;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 #anchor {
   color: var(--primary-color);
