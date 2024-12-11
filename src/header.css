@@ -9,7 +9,6 @@ header {
     flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
     justify-content: center; /* Center the header content horizontally */
     align-items: center; /* Center the header content vertically */
-    padding: 0.75rem;
     font-size: 1.25rem;
 }
 
@@ -17,7 +16,6 @@ footer {
     background-color: var(--background-color);
     border-top: 3px solid var(--primary-color);
     margin-top: auto;
-    padding: 1rem;
     text-align: center;
 }
 
