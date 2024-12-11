@@ -72,8 +72,8 @@ button:hover {
 
 @media (max-width: 480px) {
   button, .submit-button {
-    font-size: 11px;
-    padding: 4px 8px;
+    font-size: 0.85rem;
+   
   }
 }
 
