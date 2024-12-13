@@ -22,6 +22,7 @@ import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.png';
+import awsLogo from '../images/AWS.png';
 
 const logos = [
   { src: visualStudioLogo, name: 'VisualStudio' },
@@ -42,6 +43,7 @@ const logos = [
   { src: sqlLogo, name: 'SQL' },
   { src: viteLogo, name: 'ViteJS' },
   { src: vercelLogo, name: 'Vercel' },
+  { src: awsLogo, name: 'AWS' }
 ];
 
 const ProfileSection = () => (
