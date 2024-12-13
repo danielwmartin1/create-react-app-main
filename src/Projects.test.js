@@ -23,7 +23,6 @@ test('renders all project links', () => {
         "Simon Says",
         "ACLS Algorithm",
         "E-Commerce Frontend",
-        "Calendar",
         "Weather App",
         "To-Do List",
         "To-Do List API"
