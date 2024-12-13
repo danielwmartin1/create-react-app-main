@@ -3,12 +3,12 @@ import "../App.css";
 
 const Projects = () => {
     const projectLinks = [
-        { href: "https://danielwmartin1.github.io/first-website/", text: "My First Website" },
-        { href: "https://danielwmartin1.github.io/Tic-Tac-Toe/", text: "Tic-Tac-Toe" },
-        { href: "https://simon-says-zeta-opal.vercel.app/", text: "Simon Says" },
-        { href: "https://fake-store-sooty-nine.vercel.app/", text: "Fake Store" },
-        { href: "https://weather-app-three-opal-72.vercel.app", text: "Weather App" },
-        { href: "https://client-todo-coral.vercel.app/", text: "To-Do List" }
+        { href: "https://pro1construction.vercel.app/", text: "My First Website" },
+        { href: "https://dwm-tictactoe.vercel.app/", text: "Tic-Tac-Toe" },
+        { href: "https://dwm-simonsays.vercel.app/", text: "Simon Says" },
+        { href: "https://dwm-ecommerce.vercel.app/", text: "E-Commerce Frontend" },
+        { href: "https://dwm-weatherapp.vercel.app/", text: "Weather App" },
+        { href: "https://dwm-todolist.vercel.app/", text: "To-Do List" }
     ];
 
     return (
