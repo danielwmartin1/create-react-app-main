@@ -8,9 +8,7 @@ function Form() {
 
     useEffect(() => {
         console.log('Form component mounted');
-        return () => {
-            console.log('Form component unmounted');
-        };
+        return () => console.log('Form component unmounted');
     }, []);
 
     const handleSubmit = (e) => {
@@ -20,116 +18,49 @@ function Form() {
             return;
         }
 
-        // You can add additional logic here, such as sending the form data to an API or performing validation
         fetch('https://formspree.io/f/mrbgkbky', {
             method: 'POST',
-            headers: {
-            'Content-Type': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, message })
         })
-        .then(response => {
-            if (response.headers.get('content-type')?.includes('application/json')) {
-                return response.json();
-            } else {
-                throw new Error('Unexpected content type');
-            }
-        })
+        .then(response => response.headers.get('content-type')?.includes('application/json') ? response.json() : Promise.reject('Unexpected content type'))
         .then(data => {
             console.log('Success:', data);
-            // Display a pop-up message
-            const popup = document.createElement('div');
-            popup.style.position = 'fixed';
-            popup.style.backgroundColor = 'rgba(0, 255, 0, 0.5)';
-            popup.style.top = '50%';
-            popup.style.left = '50%';
-            popup.style.transform = 'translate(-50%, -50%)';
-            popup.style.color = 'white';
-            popup.style.padding = '30px'; // Increased padding for larger size
-            popup.style.borderRadius = '6px';
-            popup.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-            popup.style.fontSize = '18px'; // Increased font size
-            popup.innerText = 'Form submitted successfully!';
-            document.body.appendChild(popup);
-
-            // Remove the pop-up after 3 seconds
-            setTimeout(() => {
-                document.body.removeChild(popup);
-            }, 3000);
-            // Reset form fields
+            showPopup('Form submitted successfully!', 'rgba(0, 255, 0, 0.5)');
             setEmail('');
             setMessage('');
         })
-        .catch((error) => {
+        .catch(error => {
             console.error('Error:', error);
-            alert('There was an error submitting the form.');
-                        // Display a pop-up message
-            const popup = document.createElement('div');
-            popup.style.position = 'fixed';
-            popup.style.backgroundColor = 'red';
-            popup.style.top = '50%';
-            popup.style.left = '50%';
-            popup.style.transform = 'translate(-50%, -50%)';
-            popup.style.backgroundColor = 'rgba(255, 0, 0, 0.5)';
-            popup.style.color = 'white';
-            popup.style.padding = '30px'; // Increased padding for larger size
-            popup.style.borderRadius = '6px';
-            popup.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-            popup.style.fontSize = '18px'; // Increased font size
-            popup.innerText = 'There was an error submitting the form.';
-            document.body.appendChild(popup);
+            showPopup('There was an error submitting the form.', 'rgba(255, 0, 0, 0.5)');
         });
         console.log('Form submitted with:', { email, message });
     };
 
+    const showPopup = (message, bgColor) => {
+        const popup = document.createElement('div');
+        Object.assign(popup.style, {
+            position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+            backgroundColor: bgColor, color: 'white', padding: '30px', borderRadius: '6px',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', fontSize: '18px'
+        });
+        popup.innerText = message;
+        document.body.appendChild(popup);
+        setTimeout(() => document.body.removeChild(popup), 3000);
+    };
+
     const labelStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        fontWeight: 'bold',
-        fontSize: '1.2rem',
-        color: 'white',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-        width: '60%',
+        display: 'flex', flexDirection: 'column', fontWeight: 'bold', fontSize: '1.2rem',
+        color: 'white', justifyContent: 'center', alignItems: 'center', textAlign: 'center', width: '60%'
     };
 
     const inputStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        padding: '12px',
-        border: '2px solid #ccc',
-        borderRadius: '5px',
-        boxSizing: 'border-box',
-        marginTop: '6px',
-        marginBottom: '16px',
-        resize: 'vertical',
-        fontSize: '14px',
-        fontFamily: 'Arial, sans-serif',
-        color: 'black',
-        textAlign: 'center'
-
+        display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', padding: '12px',
+        border: '2px solid #ccc', borderRadius: '5px', boxSizing: 'border-box', marginTop: '6px',
+        marginBottom: '16px', resize: 'vertical', fontSize: '14px', fontFamily: 'Arial, sans-serif', color: 'black', textAlign: 'center'
     };
 
-    const textareaStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        border: '2px solid #ccc',
-        borderRadius: '5px',
-        boxSizing: 'border-box',
-        marginTop: '6px',
-        marginBottom: '16px',
-        resize: 'vertical',
-        fontSize: '14px',
-        fontFamily: 'Arial, sans-serif',
-        color: 'black',
-        textAlign: 'center',
-        paddingTop: '1rem',
-    };
+    const textareaStyle = { ...inputStyle, paddingTop: '1rem' };
 
     return (
         <div className="form-container">
@@ -138,18 +69,9 @@ function Form() {
                 method="POST"
                 onSubmit={handleSubmit}
                 style={{
-                    textAlign: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    fontFamily: 'Arial, sans-serif',
-                    width: '60%',
-                    backgroundColor: 'var(--background-color)',
-                    padding: '2rem',
-                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-                    borderRadius: '5px',
-                    border: '2px solid var(--primary-color)',
+                    textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center',
+                    alignItems: 'center', fontFamily: 'Arial, sans-serif', width: '60%', backgroundColor: 'var(--background-color)',
+                    padding: '2rem', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', borderRadius: '5px', border: '2px solid var(--primary-color)'
                 }}
             >
                 <label style={labelStyle}>
@@ -177,25 +99,14 @@ function Form() {
                         style={textareaStyle}
                     ></textarea>
                 </label>
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignContent: 'center',
-                    }}
-                >
-                    <button
-                        className="submit-button"
-                        type="submit"
-
-                      
-                    >
-                        Send
-                    </button>
+                <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
+                    <button className="submit-button" type="submit">Send</button>
                 </div>
             </form>
-            <section style={{ color: 'white', display: 'flex', flexDirection: 'column', padding: '3rem'}}>
-                <p style={{textAlign: 'center', fontSize: '1.1rem', paddingTop: '1.5rem' }}>Please feel free to contact me with any questions or feedback. I will get back to you as soon as possible.</p>
+            <section style={{ color: 'white', display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+                <p style={{ textAlign: 'center', fontSize: '1.1rem', paddingTop: '1.5rem' }}>
+                    Please feel free to contact me with any questions or feedback. I will get back to you as soon as possible.
+                </p>
             </section>
         </div>
     );
