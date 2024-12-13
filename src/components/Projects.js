@@ -18,7 +18,9 @@ const Projects = () => {
         <div className='container main project-div'>
             <div className="portfolio-container">
                 <h1 className="portfolio">Portfolio</h1>
-                <div className="project-link anchor project divProject">
+                <div
+                    key="project-link" 
+                    className="project-link anchor project divProject">
                     <a className='anchor project' style={{textDecoration: 'underline', paddingBottom: '1rem'}} href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
                         My GitHub Repositories
                     </a>
