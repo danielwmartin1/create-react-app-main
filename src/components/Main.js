@@ -21,7 +21,7 @@ import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import viteLogo from '../images/Vitejs-logo.svg';
-import vercelLogo from '../images/vercel.png';
+import vercelLogo from '../images/vercel.svg';
 import awsLogo from '../images/AWS.png';
 
 const logos = [
