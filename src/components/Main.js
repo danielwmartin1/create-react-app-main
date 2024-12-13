@@ -15,6 +15,7 @@ import bootstrapLogo from '../images/bootstrap.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import nodeLogo from '../images/node.png';
+import expressLogo from '../images/express.png';
 import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '../images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
@@ -36,6 +37,7 @@ const logos = [
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
+  { src: expressLogo, name: 'Express.JS' },
   { src: nextjsLogo, name: 'Next.JS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: csharpLogo, name: 'C#' },
