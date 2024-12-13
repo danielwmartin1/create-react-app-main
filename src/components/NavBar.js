@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 import "../script.js";
 import "../header.css";
 
+const NavItems = ({ closeMenu }) => (
+  <ul className="nav-items">
+    <li className="listItem" onClick={closeMenu}><Link to="/">Home</Link></li>
+    <li className="listItem" onClick={closeMenu}><Link to="/about">About</Link></li>
+    <li className="listItem" onClick={closeMenu}><Link to="/projects">Portfolio</Link></li>
+    <li className="listItem" onClick={closeMenu}><Link to="/contact">Contact</Link></li>
+  </ul>
+);
+
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [isOpen, setIsOpen] = useState(false);
@@ -43,22 +52,10 @@ const NavBar = () => {
           <button onClick={toggleMenu} className="menu-button">
             Menu
           </button>
-          {isOpen && (
-            <ul className="nav-items">
-              <li className="listItem" onClick={closeMenu}><Link to="/">Home</Link></li>
-              <li className="listItem" onClick={closeMenu}><Link to="/about">About</Link></li>
-              <li className="listItem" onClick={closeMenu}><Link to="/projects">Portfolio</Link></li>
-              <li className="listItem" onClick={closeMenu}><Link to="/contact">Contact</Link></li>
-            </ul>
-          )}
+          {isOpen && <NavItems closeMenu={closeMenu} />}
         </div>
       ) : (
-        <ul className="nav-items">
-          <li className="listItem"><Link to="/">Home</Link></li>
-          <li className="listItem"><Link to="/about">About</Link></li>
-          <li className="listItem"><Link to="/projects">Portfolio</Link></li>
-          <li className="listItem"><Link to="/contact">Contact</Link></li>
-        </ul>
+        <NavItems closeMenu={closeMenu} />
       )}
     </nav>
   );
