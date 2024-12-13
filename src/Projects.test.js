@@ -21,10 +21,12 @@ test('renders all project links', () => {
         "My First Website",
         "Tic-Tac-Toe",
         "Simon Says",
+        "ACLS Algorithm",
         "E-Commerce Frontend",
         "Calendar",
         "Weather App",
-        "To-Do List"
+        "To-Do List",
+        "To-Do List API"
     ];
 
     projectLinks.forEach(linkText => {
