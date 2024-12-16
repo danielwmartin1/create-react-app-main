@@ -45,7 +45,6 @@ const logos = [
   { src: sqlLogo, name: 'SQL' },
   { src: viteLogo, name: 'ViteJS' },
   { src: vercelLogo, name: 'Vercel' },
-  { src: awsLogo, name: 'AWS' }
 ];
 
 const ProfileSection = () => (
