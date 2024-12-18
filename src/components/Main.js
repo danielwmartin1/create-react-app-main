@@ -52,14 +52,17 @@ const ProfileSection = () => (
   <div className="container">
     <img id="profile" src={profileImg} alt="Profile Pic" title="Profile" />
     <h1 id="name" className='headings'>Daniel Martin</h1>
-    <p className="p">After a successful 15-year career as a nurse, I transitioned into software development to pursue my passion for technology and problem-solving. Over the past few years, I have immersed myself in full-stack development, gaining proficiency in multiple programming languages and frameworks. I'm continuously expanding my skill set and thrive in environments that foster learning and innovation.</p>
+    <p className="p">
+      I pursued my passion for technology and problem-solving through software development. Over the past few years, I have immersed myself in full-stack development, gaining proficiency in programming languages like JavaScript and Python and frameworks such as React and Node.js. I’m committed to continuous learning, thrive in innovative environments, and actively explore emerging technologies to deepen my expertise and deliver impactful solutions.</p>
   </div>
 );
 
 const ExperienceSection = () => (
   <div className="container">
     <h2 id="experience" className='headings'>Experience</h2>
-    <p className="p">With extensive hands-on experience in web development, I have developed strong expertise in HTML, CSS, JavaScript, and modern frameworks such as React. My journey includes working on a wide range of projects, from small business websites to large-scale web applications, giving me a comprehensive understanding of web technologies and their practical applications.</p>
+    <p className="p">
+      With extensive hands-on experience in web development, I have developed strong expertise in HTML, CSS, JavaScript, and modern frameworks such as React. My journey includes working on a wide range of projects, from small business websites to large-scale web applications, giving me a comprehensive understanding of web technologies and their practical applications.
+    </p>
   </div>
 );
 
