@@ -12,6 +12,7 @@ import htmlLogo from '../images/HTML.png';
 import cssLogo from '../images/CSS.png';
 import jsLogo from '../images/JS.png';
 import bootstrapLogo from '../images/bootstrap.png';
+import tailwindLogo from '../images/tailwind.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import nodeLogo from '../images/node.png';
@@ -22,8 +23,7 @@ import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import viteLogo from '../images/Vitejs-logo.svg';
-import vercelLogo from '../images/vercel.svg';
-import awsLogo from '../images/AWS.png';
+import vercelLogo from '../images/vercel.svg'
 
 const logos = [
   { src: visualStudioLogo, name: 'VisualStudio' },
@@ -34,6 +34,7 @@ const logos = [
   { src: cssLogo, name: 'CSS' },
   { src: jsLogo, name: 'JavaScript' },
   { src: bootstrapLogo, name: 'Bootstrap' },
+  { src: tailwindLogo, name: 'TailwindCSS' },
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
@@ -44,7 +45,7 @@ const logos = [
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
   { src: viteLogo, name: 'ViteJS' },
-  { src: vercelLogo, name: 'Vercel' },
+  { src: vercelLogo, name: 'Vercel' }
 ];
 
 const ProfileSection = () => (
