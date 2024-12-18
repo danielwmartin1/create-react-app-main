@@ -21,13 +21,13 @@ const Projects = () => {
                     id="project-link"
                     key="project-link" 
                     className="project-link anchor project divProject">
-                    <a className='anchor project' style={{textDecoration: 'underline', paddingBottom: '1rem'}} href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <a className='anchor project' style={{textDecoration: 'underline', paddingBottom: '1rem'}} href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer" title="https://github.com/danielwmartin1?tab=repositories">
                         My GitHub Repositories
                     </a>
                     <div className='project-link'>
                         {projectLinks.map((project, index) => (
-                            <div>
-                                <a key={index} className='anchor project' href={project.href} target="_blank" rel="noopener noreferrer">
+                            <div key={index}>
+                                <a className='anchor project' href={project.href} target="_blank" rel="noopener noreferrer" title={project.href}>
                                     {project.text}
                                 </a>
                             </div>

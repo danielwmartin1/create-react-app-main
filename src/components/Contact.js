@@ -8,7 +8,7 @@ import '../buttons.css';
 import { Link } from 'react-router-dom';
 
 const SocialIcon = ({ href, src, alt }) => (
-  <a className="icon" href={href} target="_blank" rel="noopener noreferrer">
+  <a className="icon" href={href} title={alt} target="_blank" rel="noopener noreferrer">
     <img className="small-logo" src={src} alt={alt} />
   </a>
 );
@@ -27,7 +27,7 @@ const Contact = () => {
         <section className="section">
           <h2 className='contact'>Contact Me:</h2>
           <Link to="/form">
-            <button className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
+            <button title={"Contact Form"} className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
           </Link>
         </section>
       </div>
