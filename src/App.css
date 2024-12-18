@@ -97,9 +97,14 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  padding: 1rem;
   color: var(--primary-color);
   text-align: center;
-  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
 }
 
 .section p {
