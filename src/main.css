@@ -54,6 +54,12 @@
   border-radius: 5px;
 }
 
+#VisualStudio {
+  width: 75px;
+  height: auto;
+}
+
+
 .main p {
   font-size: 0.7em; /* 9px */
 }
@@ -125,6 +131,10 @@ p.p {
   .logo {
     width: 50px;
   }
+
+  #VisualStudio {
+    width: 75px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -156,6 +166,10 @@ p.p {
   #profile {
     width: 100px;
   }
+
+  #VisualStudio {
+    width: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -169,5 +183,9 @@ p.p {
 
   .logo {
     width: 30px;
+  }
+
+  #VisualStudio {
+    width: 45px;
   }
 }
