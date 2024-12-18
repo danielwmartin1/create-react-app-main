@@ -54,12 +54,14 @@
   border-radius: 5px;
 }
 
-#VisualStudio {
+#VisualStudio, #Git {
   width: 85px;
   height: auto;
-  margin: 0;
 }
 
+#VisualStudio {
+  margin: 0;
+}
 
 .main p {
   font-size: 0.7em; /* 9px */
