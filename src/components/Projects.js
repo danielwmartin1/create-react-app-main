@@ -21,7 +21,7 @@ const Projects = () => {
                     id="project-link"
                     key="project-link" 
                     className="project-link anchor project divProject">
-                    <a className='anchor project' style={{textDecoration: 'underline', paddingBottom: '1rem'}} href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer" title="https://github.com/danielwmartin1?tab=repositories">
+                    <a id="githubRepo" className='anchor project' style={{textDecoration: 'underline', paddingBottom: '1rem'}} href="https://github.com/danielwmartin1?tab=repositories" target="_blank" rel="noopener noreferrer" title="https://github.com/danielwmartin1?tab=repositories">
                         My GitHub Repositories
                     </a>
                     <div className='project-link'>
