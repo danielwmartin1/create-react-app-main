@@ -52,14 +52,14 @@ const ProfileSection = () => (
   <div className="container">
     <img id="profile" src={profileImg} alt="Profile Pic" title="Profile" />
     <h1 id="name" className='headings'>Daniel Martin</h1>
-    <p className="p">Hello! I'm Daniel, a passionate web developer with experience in creating dynamic and responsive web apps. I love coding and enjoy learning new technologies. In my free time, I like to work on personal projects and contribute to open-source communities.</p>
+    <p className="p">After a successful 15-year career as a nurse, I transitioned into software development to pursue my passion for technology and problem-solving. Over the past few years, I have immersed myself in full-stack development, gaining proficiency in multiple programming languages and frameworks. I'm continuously expanding my skill set and thrive in environments that foster learning and innovation.</p>
   </div>
 );
 
 const ExperienceSection = () => (
   <div className="container">
     <h2 id="experience" className='headings'>Experience</h2>
-    <p className="p">With hands-on experience in web development, I have honed my skills in HTML, CSS, JavaScript, and various modern frameworks like React. My journey has been enriched by working on diverse projects that range from small business websites to large-scale web applications. This practical experience has provided me with a deep understanding of web technologies.</p>
+    <p className="p">With extensive hands-on experience in web development, I have developed strong expertise in HTML, CSS, JavaScript, and modern frameworks such as React. My journey includes working on a wide range of projects, from small business websites to large-scale web applications, giving me a comprehensive understanding of web technologies and their practical applications.</p>
   </div>
 );
 
