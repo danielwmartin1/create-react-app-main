@@ -207,6 +207,14 @@ p.p {
   margin: 5px
 }
 
+#project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem; /* 16px */
+  margin: 3rem;
+}
+
 
 .divProject {
   display: flex;
@@ -278,6 +286,11 @@ body, html {
   p.p {
     width: 90%;
   }
+
+  #project-link {
+    font-size: 0.875rem; /* 14px */
+    margin: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -300,5 +313,10 @@ body, html {
 
   p.p {
     width: 100%;
+  }
+
+  #project-link {
+    font-size: 0.75rem; /* 12px */
+    margin: 1rem;
   }
 }
