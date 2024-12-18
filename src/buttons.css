@@ -1,5 +1,12 @@
 @import url('./variables.css');
 
+.menu-button {
+  background-color: var(--button-background-color);
+  border: none;
+  color: var(--text-color);
+  width: 100%;
+}
+
 button, .submit-button {
   border: 2px solid transparent;
   border-radius: 5px;

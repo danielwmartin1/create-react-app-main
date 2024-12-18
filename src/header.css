@@ -10,6 +10,7 @@ header {
     justify-content: center; /* Center the header content horizontally */
     align-items: center; /* Center the header content vertically */
     font-size: 1.25rem;
+    text-align: center;
 }
 
 footer {
