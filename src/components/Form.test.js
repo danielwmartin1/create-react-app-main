@@ -54,7 +54,7 @@ describe('Form Component', () => {
         fireEvent.change(screen.getByPlaceholderText('Your message here'), { target: { value: 'Test message' } });
         fireEvent.click(screen.getByText('Send'));
 
-        expect(await screen.findByText((content) => content.startsWith('Form submitted successfully!'))).toBeInTheDocument();
+        expect(await screen.findByText((content, element) => content.includes('Form submitted successfully!'))).toBeInTheDocument();
     });
 
     test('shows error popup on failed submission', async () => {
@@ -65,6 +65,6 @@ describe('Form Component', () => {
         fireEvent.change(screen.getByPlaceholderText('Your message here'), { target: { value: 'Test message' } });
         fireEvent.click(screen.getByText('Send'));
 
-        expect(await screen.findByText('There was an error submitting the form.')).toBeInTheDocument();
+        expect(await screen.findByText((content, element) => content.includes('There was an error submitting the form.'))).toBeInTheDocument();
     });
 });

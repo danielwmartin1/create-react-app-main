@@ -6,43 +6,37 @@ import '../buttons.css';
 function Form() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [popupMessage, setPopupMessage] = useState(null);
-    const [popupBgColor, setPopupBgColor] = useState('');
+    const [status, setStatus] = useState(null);
 
     useEffect(() => {
         console.log('Form component mounted');
         return () => console.log('Form component unmounted');
     }, []);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!email || !message) {
             alert('Please fill out both fields.');
             return;
         }
 
-        fetch('https://formspree.io/f/mrbgkbky', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, message })
-        })
-        .then(response => response.ok ? response.json() : Promise.reject('Failed to submit form'))
-        .then(data => {
-            console.log('Success:', data);
-            showPopup('Form submitted successfully!', 'rgba(0, 255, 0, 0.5)');
-            setEmail('');
-            setMessage('');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            showPopup('There was an error submitting the form.', 'rgba(255, 0, 0, 0.5)');
-        });
-    };
-
-    const showPopup = (message, bgColor) => {
-        setPopupMessage(message);
-        setPopupBgColor(bgColor);
-        setTimeout(() => setPopupMessage(null), 3000);
+        try {
+            const response = await fetch('https://formspree.io/f/mrbgkbky', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, message })
+            });
+            const result = await response.json();
+            if (result.success) {
+                setStatus('success');
+                setEmail('');
+                setMessage('');
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            setStatus('error');
+        }
     };
 
     const labelStyle = {
@@ -61,8 +55,6 @@ function Form() {
     return (
         <div className="form-container">
             <form
-                action="https://formspree.io/f/mrbgkbky"
-                method="POST"
                 onSubmit={handleSubmit}
                 style={{
                     textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center',
@@ -98,22 +90,14 @@ function Form() {
                 <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
                     <button className="submit-button" type="submit">Send</button>
                 </div>
+                {status === 'success' && <p style={{ color: 'green' }}>Form submitted successfully!</p>}
+                {status === 'error' && <p style={{ color: 'red' }}>There was an error submitting the form.</p>}
             </form>
             <section style={{ color: 'white', display: 'flex', flexDirection: 'column', padding: '3rem' }}>
                 <p style={{ textAlign: 'center', fontSize: '1.1rem', paddingTop: '1.5rem' }}>
                     Please feel free to contact me with any questions or feedback. I will get back to you as soon as possible.
                 </p>
             </section>
-            {popupMessage && createPortal(
-                <div style={{
-                    position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-                    backgroundColor: popupBgColor, color: 'white', padding: '30px', borderRadius: '6px',
-                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', fontSize: '18px'
-                }}>
-                    {popupMessage}
-                </div>,
-                document.body
-            )}
         </div>
     );
 }
