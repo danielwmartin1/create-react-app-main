@@ -24,7 +24,6 @@
   overflow: auto;
   flex: 1;
   color: var(--text-color);
-  margin: var(--margin-small) 0; /* Adjust this value as needed */
 }
 
 .logo {
