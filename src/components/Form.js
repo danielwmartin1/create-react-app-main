@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import '../App.css';
 import '../buttons.css';
 
 function Form() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [popupMessage, setPopupMessage] = useState(null);
+    const [popupBgColor, setPopupBgColor] = useState('');
 
     useEffect(() => {
         console.log('Form component mounted');
@@ -23,7 +26,7 @@ function Form() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, message })
         })
-        .then(response => response.headers.get('content-type')?.includes('application/json') ? response.json() : Promise.reject('Unexpected content type'))
+        .then(response => response.ok ? response.json() : Promise.reject('Failed to submit form'))
         .then(data => {
             console.log('Success:', data);
             showPopup('Form submitted successfully!', 'rgba(0, 255, 0, 0.5)');
@@ -34,19 +37,12 @@ function Form() {
             console.error('Error:', error);
             showPopup('There was an error submitting the form.', 'rgba(255, 0, 0, 0.5)');
         });
-        console.log('Form submitted with:', { email, message });
     };
 
     const showPopup = (message, bgColor) => {
-        const popup = document.createElement('div');
-        Object.assign(popup.style, {
-            position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            backgroundColor: bgColor, color: 'white', padding: '30px', borderRadius: '6px',
-            boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', fontSize: '18px'
-        });
-        popup.innerText = message;
-        document.body.appendChild(popup);
-        setTimeout(() => document.body.removeChild(popup), 3000);
+        setPopupMessage(message);
+        setPopupBgColor(bgColor);
+        setTimeout(() => setPopupMessage(null), 3000);
     };
 
     const labelStyle = {
@@ -108,6 +104,16 @@ function Form() {
                     Please feel free to contact me with any questions or feedback. I will get back to you as soon as possible.
                 </p>
             </section>
+            {popupMessage && createPortal(
+                <div style={{
+                    position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                    backgroundColor: popupBgColor, color: 'white', padding: '30px', borderRadius: '6px',
+                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', fontSize: '18px'
+                }}>
+                    {popupMessage}
+                </div>,
+                document.body
+            )}
         </div>
     );
 }

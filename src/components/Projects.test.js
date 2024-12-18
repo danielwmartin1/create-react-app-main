@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Projects from './components/Projects.js';
+import Projects from './Projects.js';
 
 test('renders Portfolio heading', () => {
     render(<Projects />);

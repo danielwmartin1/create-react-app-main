@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Contact from './components/Contact';
+import Contact from './Contact.js';
 
 describe('Contact Component', () => {
     test('renders contact message', () => {
@@ -42,15 +42,22 @@ describe('Contact Component', () => {
     });
 
     test('renders send message button and opens form in new tab', () => {
-        render(
-            <Router>
-                <Contact />
-            </Router>
-        );
-        const sendMessageButton = screen.getByText(/Send Message/i);
-        expect(sendMessageButton).toBeInTheDocument();
-
-        fireEvent.click(sendMessageButton);
-        expect(window.open).toHaveBeenCalledWith('/form', '_blank');
+            // Mock window.open
+            const originalWindowOpen = window.open;
+            window.open = jest.fn();
+    
+            render(
+                <Router>
+                    <Contact />
+                </Router>
+            );
+            const sendMessageButton = screen.getByText(/Send Message/i);
+            expect(sendMessageButton).toBeInTheDocument();
+    
+            fireEvent.click(sendMessageButton);
+            expect(window.open).toHaveBeenCalledWith('/form', '_blank');
+    
+            // Restore original window.open
+            window.open = originalWindowOpen;
     });
 });

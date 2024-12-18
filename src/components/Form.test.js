@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Form from './components/Form';
+import Form from './Form.js';
 
 describe('Form Component', () => {
     test('renders form correctly', () => {
@@ -54,7 +54,7 @@ describe('Form Component', () => {
         fireEvent.change(screen.getByPlaceholderText('Your message here'), { target: { value: 'Test message' } });
         fireEvent.click(screen.getByText('Send'));
 
-        expect(await screen.findByText('Form submitted successfully!')).toBeInTheDocument();
+        expect(await screen.findByText((content) => content.startsWith('Form submitted successfully!'))).toBeInTheDocument();
     });
 
     test('shows error popup on failed submission', async () => {
