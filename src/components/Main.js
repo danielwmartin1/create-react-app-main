@@ -53,7 +53,7 @@ const ProfileSection = () => (
     <img id="profile" src={profileImg} alt="Profile Pic" title="Profile" />
     <h1 id="name" className='headings'>Daniel Martin</h1>
     <p className="p">
-      I pursued my passion for technology and problem-solving through software development. Over the past few years, I have immersed myself in full-stack development, gaining proficiency in programming languages like JavaScript and Python and frameworks such as React and Node.js. I’m committed to continuous learning, thrive in innovative environments, and actively explore emerging technologies to deepen my expertise and deliver impactful solutions.</p>
+    Welcome! I’m a full-stack developer passionate about technology and problem-solving. Over the past few years, I’ve honed my skills in programming languages like JavaScript and Python, as well as frameworks such as React and Node.js. I thrive in innovative environments, embrace continuous learning, and love exploring emerging technologies to create impactful solutions. Let’s build something amazing together!</p>
   </div>
 );
 
