@@ -10,9 +10,9 @@ import githubLogo from '../images/github.png';
 import gitLogo from '../images/git.png';
 import htmlLogo from '../images/HTML.png';
 import cssLogo from '../images/CSS.png';
-import jsLogo from '../images/JS.png';
 import bootstrapLogo from '../images/bootstrap.png';
 import tailwindLogo from '../images/tailwind.png';
+import jsLogo from '../images/JS.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import nodeLogo from '../images/node.png';
@@ -32,9 +32,9 @@ const logos = [
   { src: gitLogo, name: 'Git' },
   { src: htmlLogo, name: 'HTML' },
   { src: cssLogo, name: 'CSS' },
-  { src: jsLogo, name: 'JavaScript' },
   { src: bootstrapLogo, name: 'Bootstrap' },
   { src: tailwindLogo, name: 'TailwindCSS' },
+  { src: jsLogo, name: 'JavaScript' },
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
